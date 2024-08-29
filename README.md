@@ -22,19 +22,17 @@ O propósito do sistema é criar um meio de dar visibilidade aos projetos dos al
 |How? (Como?)|O usuário organiza o portfólio em uma plataforma digital, selecionando os melhores trabalhos, organizando-os de forma lógica e atrativa para facilitar a visibilidade.|
 |How much? (Quanto custará?)|O custo do projeto será o tempo e esforço para o desenvolvimento da aplicação|
 
-
-
-
+-----------------------------------------------------------------------//-----------//---------------------------
 
 Requisitos Funcionais e Não Funcionais
 fazer os requisitos funcionais e não funcionais em linguagem natural, já separados em funcional e não funcional. !!!NÃO PODE INVENTAR REQUISITOS!!!
 
-funcionais: 
+Funcionais: 
 - o que sistema faz
 1º - "narrativa livre": resumo de um grupo de requisitos
 2º - fazer uma lista de requisitos detalhando o que é descoberto sobre os requisitos
 
-não funcionais:
+Não funcionais:
 !!!AS CATEGORIAS SÃO EXEMPLOS E NÃO INVENTE NADA!!!
 - uma característica do sistema que não seja a função dele
 - exemplo: não só apenas dizer "tem de ser rápido" mas, conceber um parâmetro "...deve ser capaz de processar 1.000.000 de documentos por segundo."

@@ -1,0 +1,17 @@
+5W2H: 
+
+29/08/2024
+
+Bernardo Gonçalves
+Bryan
+João Pedro Abdu
+Gustavo Salvador 
+Lucca Barcelos
+
+- What: Um site de repositório de projetos IBMEC
+- Where: Online, em um site do própio IBMEC que tenha fácil acessibilidade para os empregadores
+- When: Lançamento no fim de período de 2024.2
+- Who: Equipe de alunos e professores
+- Why: Para valorizar os projetos dos alunos e facilitar o acesso dos empregadores aos alunos
+- How: Usando tecnologias apredidas nas matérias de Projeto Front-END e desevolvimento WEB
+- How much:  O projeto requer um investimento significativo de tempo e dedicação por parte da equipe de alunos e professores, que irão aplicar as habilidades adquiridas nas disciplinas de Projeto Front-END e Desenvolvimento WEB. O verdadeiro custo está na qualidade do esforço coletivo, visando criar uma plataforma que valorize os projetos dos alunos e seja uma ferramenta eficaz para empregadores.

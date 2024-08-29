@@ -1,4 +1,4 @@
-# projeto_front_end
+# Projeto_front_end
 
 - Bryan: https://github.com/Bryanads/react-base-project.git
 - Bernardo Gonçalves: https://github.com/BernardoMGG/react-base-project.git
@@ -6,6 +6,6 @@
 - Lucca Barcelos: https://github.com/CelosLucca/react-base-project.git
 - João Pedro Abdu: https://github.com/jp-abdu/react-base-project.git
 
-#Propósito do Sistema
+# Propósito do Sistema
 
 O propósito do sistema é criar um meio de dar visibilidade aos projetos dos alunos do IBMEC.

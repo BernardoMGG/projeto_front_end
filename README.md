@@ -16,8 +16,8 @@ O propósito do sistema é criar um meio de dar visibilidade aos projetos dos al
 |-------|--------|
 |What?(O que é?)|Um site de que que exibe projetos IBMEC, em forma de portifolio para os alunos | 
 |Why? (Por que isso será feito?)|Para valorizar os projetos dos alunos e facilitar o acesso dos empregadores aos mesmos |
-|Where? (Onde?)|Online, em um site do própio IBMEC que tenha fácil acessibilidade para os empregadores |
+|Where? (Onde?)|Online, em um site do próprio IBMEC que tenha fácil acessibilidade para os empregadores |
 |When? (Quando será feito, e utilizado?)|Será feito durante o semestre de 2024.2, e utilizado para gerar visibilidade aos alunos|
 |Who? (Quem?)|Utilizado pelos usuários externos, alunos e professores|
-|How? (Como?)||
+|How? (Como?)|O usuário organiza o portfólio em uma plataforma digital, selecionando os melhores trabalhos, organizando-os de forma lógica e atrativa para facilitar a visibilidade.|
 |How much? (Quanto custará?)|O custo do projeto será o tempo e esforço para o desenvolvimento da aplicação|

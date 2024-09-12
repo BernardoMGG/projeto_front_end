@@ -37,3 +37,15 @@ Não funcionais:
 - uma característica do sistema que não seja a função dele
 - exemplo: não só apenas dizer "tem de ser rápido" mas, conceber um parâmetro "...deve ser capaz de processar 1.000.000 de documentos por segundo."
 - exemplo: "ser feito em web"
+-----------------------------------------------------------------------//-----------//---------------------------
+
+Funcionalidades:
+- O sistema contém o login do Administrador;
+- O sistema mostra os portifólios em grid ou lista;
+- O sistema mostra os Projetos de cada Alunos
+- O sistema contém um sistema de Busca e Filtro 
+- No sistema, o administrador adiciona e disponibiliza os projetos no portifólio do Aluno
+- O sistema deve informar a data de Início e Fim dos projetos
+- O sistema deve conter as tecnologias (Linguagens, Ferramentas...) usadas no projeto
+- O sistema deve conter as descrições (estar na pagina de detalhes do projeto) do projeto
+- O sistema contém 1 imagem

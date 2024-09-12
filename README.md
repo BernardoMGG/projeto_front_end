@@ -1,4 +1,5 @@
 # Projeto_front_end
+Grupo 2BJGL
 
 - Bryan Amorim: https://github.com/Bryanads/react-base-project.git
 - Bernardo Gonçalves: https://github.com/BernardoMGG/react-base-project.git

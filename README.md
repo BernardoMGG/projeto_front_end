@@ -28,7 +28,7 @@ Requisitos Funcionais e Não Funcionais
 fazer os requisitos funcionais e não funcionais em linguagem natural, já separados em funcional e não funcional. !!!NÃO PODE INVENTAR REQUISITOS!!!
 
 Funcionais: 
-- o que sistema faz
+- o que sistema faz  
 1º - "narrativa livre": resumo de um grupo de requisitos  
 2º - fazer uma lista de requisitos detalhando o que é descoberto sobre os requisitos
 

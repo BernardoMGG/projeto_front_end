@@ -49,7 +49,7 @@ Funcionais:
 - O sistema deve informar a data de Início e Fim dos projetos
 - O sistema deve conter as tecnologias (Linguagens, Ferramentas...) usadas no projeto
 - O sistema deve conter as descrições (estar na pagina de detalhes do projeto) do projeto
-- O sistema contém 1 imagem
+- O sistema deve contém  pelo menos 1 imagem para cada projeto
 
 Não Funcionais:
 - O sistema dever ser em Inglês e Português;

@@ -30,11 +30,12 @@ O propósito do sistema é criar um meio de dar visibilidade aos projetos dos al
 - O sistema deverá mostrar os portifólios em grid ou lista;
 - O sistema deverá mostrar os Projetos de cada Alunos
 - O sistema deverá conter um sistema de Busca e Filtro 
-- No sistema, o administrador deverá pdoer adicionar e disponibilizar os projetos no portifólio do Aluno
+- No sistema, o administrador deverá poder adicionar e disponibilizar os projetos no portifólio do Aluno
 - O sistema deverá informar a data de Início e Fim dos projetos
 - O sistema deverá conter as tecnologias (Linguagens, Ferramentas...) usadas no projeto
 - O sistema deverá conter as descrições (estar na pagina de detalhes do projeto) do projeto
 - O sistema deverá conter pelo menos 1 imagem para cada projeto
+- O sistema deverá conter uma opção "carregar mais"
 
 # Requisitos Não Funcionais:
 - O sistema deverá ser em Inglês e Português

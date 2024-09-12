@@ -39,7 +39,7 @@ Não funcionais:
 - exemplo: "ser feito em web"  
 -----------------------------------------------------------------------//-----------//---------------------------
 
-Funcionalidades:
+Funcionais:
 - O sistema contém o login do Administrador;
 - O sistema mostra os portifólios em grid ou lista;
 - O sistema mostra os Projetos de cada Alunos
@@ -50,7 +50,7 @@ Funcionalidades:
 - O sistema deve conter as descrições (estar na pagina de detalhes do projeto) do projeto
 - O sistema contém 1 imagem
 
-Não-Funcionalidades:
+Não Funcionais:
 - O sistema é em Inglês e Português;
 - O sistema é feito no React
 - O sistema deve Identidade visual do Ibmec

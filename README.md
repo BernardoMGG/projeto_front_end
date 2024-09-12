@@ -23,38 +23,23 @@ O propósito do sistema é criar um meio de dar visibilidade aos projetos dos al
 |How? (Como?)|O Adm organiza os portfólios em uma plataforma digital, selecionando os melhores trabalhos, organizando-os de forma lógica e atrativa para facilitar a visibilidade.|
 |How much? (Quanto custará?)|O custo do projeto será o tempo e esforço para o desenvolvimento da aplicação|
 
------------------------------------------------------------------------//-----------//---------------------------
 
-Requisitos Funcionais e Não Funcionais
-fazer os requisitos funcionais e não funcionais em linguagem natural, já separados em funcional e não funcional. !!!NÃO PODE INVENTAR REQUISITOS!!!
 
-Funcionais: 
-- o que sistema faz  
-1º - "narrativa livre": resumo de um grupo de requisitos  
-2º - fazer uma lista de requisitos detalhando o que é descoberto sobre os requisitos
+# Requisitos Funcionais:
+- O sistema deverá ter um login para Administrador;
+- O sistema deverá mostrar os portifólios em grid ou lista;
+- O sistema deverá mostrar os Projetos de cada Alunos
+- O sistema deverá conter um sistema de Busca e Filtro 
+- No sistema, o administrador deverá pdoer adicionar e disponibilizar os projetos no portifólio do Aluno
+- O sistema deverá informar a data de Início e Fim dos projetos
+- O sistema deverá conter as tecnologias (Linguagens, Ferramentas...) usadas no projeto
+- O sistema deverá conter as descrições (estar na pagina de detalhes do projeto) do projeto
+- O sistema deverá conter pelo menos 1 imagem para cada projeto
 
-Não funcionais:
-!!!AS CATEGORIAS SÃO EXEMPLOS E NÃO INVENTE NADA!!!
-- uma característica do sistema que não seja a função dele
-- exemplo: não só apenas dizer "tem de ser rápido" mas, conceber um parâmetro "...deve ser capaz de processar 1.000.000 de documentos por segundo."
-- exemplo: "ser feito em web"  
------------------------------------------------------------------------//-----------//---------------------------
-
-Funcionais:
-- O sistema contém o login do Administrador;
-- O sistema mostra os portifólios em grid ou lista;
-- O sistema mostra os Projetos de cada Alunos
-- O sistema contém um sistema de Busca e Filtro 
-- No sistema, o administrador adiciona e disponibiliza os projetos no portifólio do Aluno
-- O sistema deve informar a data de Início e Fim dos projetos
-- O sistema deve conter as tecnologias (Linguagens, Ferramentas...) usadas no projeto
-- O sistema deve conter as descrições (estar na pagina de detalhes do projeto) do projeto
-- O sistema deve contém  pelo menos 1 imagem para cada projeto
-
-Não Funcionais:
-- O sistema dever ser em Inglês e Português;
-- O sistema deve ser feito no React
-- O sistema deve Identidade visual do Ibmec
-- O sistema deve servir tanto para computador quanto para celular
+# Requisitos Não Funcionais:
+- O sistema deverá ser em Inglês e Português
+- O sistema deverá ser feito no React
+- O sistema deverá ter a identidade visual do Ibmec
+- O sistema deverá servir tanto para computador quanto para celular
 
 

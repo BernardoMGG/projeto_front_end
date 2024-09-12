@@ -49,3 +49,11 @@ Funcionalidades:
 - O sistema deve conter as tecnologias (Linguagens, Ferramentas...) usadas no projeto
 - O sistema deve conter as descrições (estar na pagina de detalhes do projeto) do projeto
 - O sistema contém 1 imagem
+
+Não-Funcionalidades:
+- O sistema é em Inglês e Português;
+- O sistema é feito no React
+- O sistema deve Identidade visual do Ibmec
+- O sistema deve servir tanto para computador quanto para celular
+
+

@@ -35,7 +35,7 @@ O propósito do sistema é criar um meio de dar visibilidade aos projetos dos al
 - O sistema deverá conter as tecnologias (Linguagens, Ferramentas...) usadas no projeto;
 - O sistema deverá conter as descrições (estar na pagina de detalhes do projeto) do projeto;
 - O sistema deverá conter pelo menos 1 imagem para cada projeto;
-- O sistema deverá conter uma vizualização de conteúdos por paginação;
+- O sistema deverá conter uma navegação de conteúdos por paginação;
 
 # Requisitos Não Funcionais:
 - O sistema deverá ser em Inglês e Português

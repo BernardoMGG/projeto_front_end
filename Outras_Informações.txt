@@ -20,21 +20,3 @@ exemplo: não só apenas dizer "tem de ser rápido" mas, conceber um parâmetro 
 exemplo: "ser feito em web"
 
 -----------------------------------------------------------------------//---------------------------//-------------------------------------------------------------------------------------
-
-AP1:
-- *detalhamento dos requisitos*: aula que vem (19/09/2024)
-- no dia da ap1 (...)
-
-*DETALHAMENTO DOS REQUISITOS*
-- você pega os requisitos e o torna mais detalhado o suficiente para o programador poder fazer o que foi pedido
-- "o sistema devera ter uma pagina inicial para mostrar os projetos": linguagem natural --> detalhar isso 
-
-*EXEMPLOS:*
-- o sistema devera listar os projetos:
-	1. o sistema devera apresentar uma listagem infinita (scroll continuo) dos projetos
-
-- o sistema devera arranjar o portifólio dos projetos em colunas:
-	1. 1 coluna em caso de smartphones
-	2. 5 colunas em caso de tablets
-	3. 6 colunas ... de até 1200 px
-  4. Não consegui ler

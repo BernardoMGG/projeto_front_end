@@ -52,8 +52,8 @@ Funcionais:
 - O sistema contém 1 imagem
 
 Não Funcionais:
-- O sistema é em Inglês e Português;
-- O sistema é feito no React
+- O sistema dever ser em Inglês e Português;
+- O sistema deve ser feito no React
 - O sistema deve Identidade visual do Ibmec
 - O sistema deve servir tanto para computador quanto para celular
 

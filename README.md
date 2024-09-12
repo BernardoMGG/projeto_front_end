@@ -36,7 +36,7 @@ Não funcionais:
 !!!AS CATEGORIAS SÃO EXEMPLOS E NÃO INVENTE NADA!!!
 - uma característica do sistema que não seja a função dele
 - exemplo: não só apenas dizer "tem de ser rápido" mas, conceber um parâmetro "...deve ser capaz de processar 1.000.000 de documentos por segundo."
-- exemplo: "ser feito em web"
+- exemplo: "ser feito em web"  
 -----------------------------------------------------------------------//-----------//---------------------------
 
 Funcionalidades:

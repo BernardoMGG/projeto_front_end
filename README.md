@@ -26,7 +26,7 @@ O propósito do sistema é criar um meio de dar visibilidade aos projetos dos al
 
 
 # Requisitos Funcionais:
-- O sistema deverá ter um login para Administrador;
+- O sistema deverá conter um login para Administrador;
 - O sistema deverá mostrar os portifólios em grid ou lista;
 - O sistema deverá mostrar os Projetos de cada Alunos;
 - O sistema deverá conter um sistema de Busca e Filtro;

@@ -1,9 +1,9 @@
 *Caso de Uso: Realizar login*
 - *Ator*: Administrador
 - *Descrição*: O administrador deseja realizar o login no sistema.
-- *Pré-condições*: O administrador está na página inicial.
+- *Pré-condições*: O administrador está na página de login (já sabe o link).
 - *Fluxo Principal*:
-  1. O administrador clica no botão "Login".
-  2. O sistema exibe a página de Login.
-  3. O administrador preenche suas informações.
+  1. O administrador insere login e senha.
+  2. O adminstrador clica em "entrar".
+  3. O sistema verifica as credenciais.
 - *Pós-condição*: O administrador é logado no sistema e redirecionado á página inicial.

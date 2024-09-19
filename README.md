@@ -88,11 +88,11 @@ O propósito do sistema é criar um meio de dar visibilidade aos projetos dos al
     - O sistema deverá ter paginação ao invés de scroll infinito.
 
 11. *O sistema deverá voltar para a página em que estava quando usarmos o "voltar" do browser:*
-   - O sistema não deve voltar para a página um.
-   - O sistema deverá fazer uso do botão do browser e não um botão na página.
+    - O sistema não deve voltar para a página um.
+    - O sistema deverá fazer uso do botão do browser e não um botão na página.
 
 12. *O sistema deverá possibilitar o adminstrador se deslogar:"
-   - O sistema deverá conter um bptão de logout na página inicial.
+    - O sistema deverá conter um bptão de logout na página inicial.
 
 
 # Requisitos Não Funcionais:

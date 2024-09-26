@@ -108,3 +108,17 @@ O propósito do sistema é criar um meio de dar visibilidade aos projetos dos al
 4. *O sistema deverá servir tanto para computador quanto para celular:*
    - O design deverá ser responsivo, garantindo uma boa usabilidade em dispositivos desktop e móveis.
 
+
+# CASOS DE USO:
+
+Fazer Login - Casos-de-uso/ADM-Fazer-Login.md
+Fazer Logout - Casos-de-uso/ADM-Fazer-logout.md
+Adicionar Projeto - Casos-de-uso/ADM-add_projeto.md
+Alterar Projeto - Casos-de-uso/ADM-alterar_proj.md
+Remover Projeto - Casos-de-uso/ADM-remover_proj.md
+Exibir Detalhes - Casos-de-uso/Usuário-exibir_detalhes.md
+Exibir Sobre Nós - Casos-de-uso/Usuário-Exibir-Sessão_"sobre nós".md
+Filtrar Busca - Casos-de-uso/Usuário-filtrar&buscar.md
+
+
+

@@ -111,9 +111,6 @@ O propósito do sistema é criar um meio de dar visibilidade aos projetos dos al
 
 # CASOS DE USO:
 
-[Texto do Link](caminho/para/o/arquivo)
-
-
 - [Fazer Login](Casos-de-uso/ADM-Fazer-Login.md)
 - [Fazer Logout](Casos-de-uso/ADM-Fazer-logout.md)
 - [Adicionar Projeto](Casos-de-uso/ADM-add_projeto.md)

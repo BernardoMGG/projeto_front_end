@@ -120,5 +120,7 @@ O propósito do sistema é criar um meio de dar visibilidade aos projetos dos al
 - [Exibir Sobre Nós](Casos-de-uso/Usuário-Exibir-Sessão_"sobre-nós".md)
 - [Filtrar Busca](Casos-de-uso/Usuário-filtrar&buscar.md)
 
+# PROTÓTIPO DO SITE:
 
+Link para o Figma: https://www.figma.com/design/F65MDpCZktulsr9NlB0S7L/Portif%C3%B3lios-e-Projetos-ibmec?node-id=0-1&node-type=canvas&t=OKowjGWjUxjPtWqR-0
 

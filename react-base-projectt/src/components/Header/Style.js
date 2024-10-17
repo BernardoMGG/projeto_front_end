@@ -11,7 +11,6 @@ const Top = styled.header`
     padding: .3em;
     margin: 0 .7em;
     min-width: 5em;
-    background-color: var(--background);
     text-decoration: none;
     font-weight: bold;
     color: var(--detalhe);

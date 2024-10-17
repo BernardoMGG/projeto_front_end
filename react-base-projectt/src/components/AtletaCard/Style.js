@@ -5,6 +5,7 @@ const Card = styled.article`
   background-color: var(--detalhe);
   padding: .5em;
   position: relative;
+  height: 15rem;
   
   div.nome{
     background-color: var(--primaria);

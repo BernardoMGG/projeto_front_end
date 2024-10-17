@@ -46,6 +46,7 @@ const Atletas = () => {
             />
           ))}
       </ListContainer>
+
     </Base>
   );
 };

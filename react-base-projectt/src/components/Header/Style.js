@@ -22,6 +22,11 @@ const Top = styled.header`
       color: var(--secundaria);
     }
   }
+
+  .logout {
+    margin-left: auto;
+  }
+
 `
 
 export {Top}

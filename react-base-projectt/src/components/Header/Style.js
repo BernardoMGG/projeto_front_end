@@ -47,6 +47,10 @@ const Top = styled.header`
     border: 1px solid #000;
     box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
   }
+
+  #google_translate_element {
+  margin-left: 20rem;
+  }
 `
 
 export {Top}

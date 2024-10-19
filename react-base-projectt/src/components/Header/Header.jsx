@@ -11,8 +11,8 @@ const Header = () => (
     <Link to="/atletas">Projetos</Link>
     <Link to="/sobre-nos">Sobre Nós</Link>
     <input type="text" id="busca" placeholder="Buscar" />
-
-    { window.sessionStorage.getItem('accessToken')
+    <div id="google_translate_element"></div>
+    {window.sessionStorage.getItem('accessToken')
     ? <Link to="/logout" className="logout">Logout</Link>
     : console.log("adm logado")
     }

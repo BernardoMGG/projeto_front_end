@@ -17,7 +17,7 @@ const Atletas = () => {
         setErro(dados);
       } else {
         // Limita os dados a 12 itens
-        setData(dados.slice(0, 12));
+        setData(dados.slice(0, 16));
       }
 
       setLoading(false);

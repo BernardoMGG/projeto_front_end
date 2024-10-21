@@ -17,7 +17,11 @@ const Atletas = () => {
         setErro(dados);
       } else {
         // Limita os dados a 12 itens
+<<<<<<< HEAD
         setData(dados.slice(0, 12));
+=======
+        setData(dados.slice(0, 16));
+>>>>>>> inicio-paginas
       }
 
       setLoading(false);

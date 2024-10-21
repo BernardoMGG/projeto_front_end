@@ -8,9 +8,15 @@
 
   --primaria: hsla(210, 67%, 43%, 1);
   --background: #EAEAEA;
+<<<<<<< HEAD
   --secundaria: #002555;
   --destaque: #ffffff;
   --detalhe: rgb(255, 255, 255);
+=======
+  --secundaria: #ffffff;
+  --destaque: #002555;
+  --detalhe: #002555;
+>>>>>>> inicio-paginas
 
 
 /*  --primaria: hsla(0, 1%, 20%, 1);

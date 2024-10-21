@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-import { signOut } from "firebase/auth"
-import { auth } from "../config/Firebase";
-import Base from "./Base";
-import { useNavigate } from "react-router-dom";
-=======
 import { signOut } from "firebase/auth";
 import { auth } from "../config/Firebase";
 import Base from "./Base";
@@ -49,34 +43,15 @@ const Button = styled.button`
     background-color: #005f7f; /* Azul mais claro */
   }
 `;
->>>>>>> inicio-paginas
 
 const Logout = () => {
   const navigate = useNavigate();
 
-<<<<<<< HEAD
-  const handleLogout = (e) =>{
-=======
   const handleLogout = (e) => {
->>>>>>> inicio-paginas
     e.preventDefault();
     signOut(auth);
     window.sessionStorage.removeItem("accessToken");
     navigate("/");
-<<<<<<< HEAD
-  }
-
-  return (
-    <Base>
-      <h1>Logout</h1>
-      <button onClick={handleLogout}>Logout</button>
-    </Base>
-  )
-}
-
-
-export default Logout;
-=======
   };
 
   return (
@@ -90,4 +65,3 @@ export default Logout;
 };
 
 export default Logout;
->>>>>>> inicio-paginas

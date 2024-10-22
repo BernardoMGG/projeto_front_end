@@ -11,6 +11,7 @@ import { auth } from "./config/Firebase";
 import { onAuthStateChanged } from "firebase/auth";
 import Atletas from "./pages/Atletas";
 import SobreNos from "./pages/SobreNos";
+import ProjetoDetalhes from "./pages/ProjetoDetalhes";
 
 const container = document.getElementById("root");
 const root = createRoot(container);
@@ -31,9 +32,11 @@ root.render(
         <Route path="/" element={<Atletas/>} />
         {/* <Route path="/fotos" element={<Fotos/>} /> */}
         <Route path="/atletas" element={<Atletas/>} />
+        <Route path="/projeto/:slug" element={<ProjetoDetalhes/>} />
         <Route path="/login" element={<Login/>} />
         <Route path="/logout" element={<Logout/>} />
         <Route path="/sobre-nos" element={<SobreNos/>} />
+
       </Routes>
     </HashRouter>
   </React.StrictMode>

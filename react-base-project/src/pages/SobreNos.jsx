@@ -9,7 +9,7 @@ const membros = [
     curso: "A preencher",
     unidade: "A preencher",
     vinculo: "A preencher",
-    imagem: "url_da_imagem_1", // Insira a URL da imagem aqui
+    imagem: "/imagens/logo.png"
   },
   {
     nome: "A preencher",

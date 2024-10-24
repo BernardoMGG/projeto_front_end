@@ -62,7 +62,7 @@ const Projetos = () => {
         )}
 
         {currentItems.map((projeto, index) => (
-          <Link to={`/projeto/${gerarSlug(projeto.nomeProjeto)}`} key={index}>
+          <Link to={`/projeto/${gerarSlug(projeto.nomeProjeto)}`} key={index} style={{textDecoration: "none"}} >
             <AtletaCard
               nome={projeto.nomeProjeto}
               src={projeto.Fotodecapa}

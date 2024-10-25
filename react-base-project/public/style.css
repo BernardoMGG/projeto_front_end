@@ -21,11 +21,13 @@
 }
 
 /* borda vermelha em todos os elementos para debug */
-/*
+
 * {
-  outline: red solid 1px;
+  /* outline: red solid 1px; */
+  padding: 0;
+  margin: 0;
 }
-*/
+
 
 body {
   margin: 0;
@@ -39,7 +41,7 @@ a {
 }
 
 div.container {
-  padding: 1rem;
+  padding: 0rem;
 }
 
 h1,h2,h3,h4,h5,h6{

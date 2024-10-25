@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
+import { useParams, Link, useNavigate } from "react-router-dom";
 import Base from "./Base";
 import { getProjetos } from "../services/getprojetos";
 import AtletaCard from "../components/ProjetoCard/ProjetoCard";
 import ListContainer from "../components/ListContainer/ListContainer";
-import { Link } from "react-router-dom";
 import Paginacao from "../components/Pagination/Pagination";
 
 const gerarSlug = (nome) => {
@@ -14,13 +14,18 @@ const gerarSlug = (nome) => {
 };
 
 const Projetos = () => {
+  const { page = "1" } = useParams(); // Captura o parâmetro da página, padrão é 1
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [erro, setErro] = useState(null);
-  const [currentPage, setCurrentPage] = useState(
-    () => Number(localStorage.getItem('currentPage')) || 1
-    );
+  const [currentPage, setCurrentPage] = useState(Number(page)); // Define o estado de currentPage usando page do useParams
   const itemsPerPage = 12;
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    // Atualiza currentPage sempre que o parâmetro page mudar
+    setCurrentPage(Number(page));
+  }, [page]);
 
   useEffect(() => {
     const getDados = async () => {
@@ -37,17 +42,13 @@ const Projetos = () => {
     getDados();
   }, []);
 
-  // Cálculo de dados para a página atual
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const currentItems = data.slice(indexOfFirstItem, indexOfLastItem);
-
-  // Número total de páginas
   const totalPages = Math.ceil(data.length / itemsPerPage);
 
   const handlePageChange = (pageNumber) => {
-    setCurrentPage(pageNumber);
-    localStorage.setItem('currentPage', pageNumber);
+    navigate(`/projetos/page/${pageNumber}`);
   };
 
   return (
@@ -71,13 +72,14 @@ const Projetos = () => {
             />
           </Link>
         ))}
+        <p>{page}</p>
       </ListContainer>
+
       <Paginacao
         currentPage={currentPage}
         totalPages={totalPages}
         onPageChange={handlePageChange}
       />
-
     </Base>
   );
 };

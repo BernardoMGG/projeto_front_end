@@ -4,6 +4,7 @@ import { getProjetos } from "../services/getprojetos";
 import AtletaCard from "../components/ProjetoCard/ProjetoCard";
 import ListContainer from "../components/ListContainer/ListContainer";
 import { Link } from "react-router-dom";
+import Paginacao from "../components/Pagination/Pagination";
 
 const gerarSlug = (nome) => {
   return nome
@@ -71,19 +72,12 @@ const Projetos = () => {
           </Link>
         ))}
       </ListContainer>
+      <Paginacao
+        currentPage={currentPage}
+        totalPages={totalPages}
+        onPageChange={handlePageChange}
+      />
 
-      {/* Paginação */}
-      <div className="pagination">
-        {Array.from({ length: totalPages }, (_, index) => (
-          <button
-            key={index + 1}
-            onClick={() => handlePageChange(index + 1)}
-            disabled={currentPage === index + 1}
-          >
-            {index + 1}
-          </button>
-        ))}
-      </div>
     </Base>
   );
 };

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams, Link, useNavigate } from "react-router-dom";
+import { useParams, Link, useNavigate, useLocation } from "react-router-dom";
 import Base from "./Base";
 import { getProjetos } from "../services/getprojetos";
 import AtletaCard from "../components/ProjetoCard/ProjetoCard";
@@ -14,16 +14,20 @@ const gerarSlug = (nome) => {
 };
 
 const Projetos = () => {
-  const { page = "1" } = useParams(); // Captura o parâmetro da página, padrão é 1
+  const { page = "1" } = useParams(); // Captura apenas a página
+  const location = useLocation();
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [erro, setErro] = useState(null);
-  const [currentPage, setCurrentPage] = useState(Number(page)); // Define o estado de currentPage usando page do useParams
+  const [currentPage, setCurrentPage] = useState(Number(page));
   const itemsPerPage = 12;
   const navigate = useNavigate();
 
+  // Extrai a query da URL
+  const queryParams = new URLSearchParams(location.search);
+  const searchQuery = queryParams.get("search") || "";
+
   useEffect(() => {
-    // Atualiza currentPage sempre que o parâmetro page mudar
     setCurrentPage(Number(page));
   }, [page]);
 
@@ -42,13 +46,17 @@ const Projetos = () => {
     getDados();
   }, []);
 
+  const filteredData = searchQuery
+    ? data.filter(projeto => projeto.nomeProjeto.toLowerCase().includes(searchQuery.toLowerCase()))
+    : data;
+
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-  const currentItems = data.slice(indexOfFirstItem, indexOfLastItem);
-  const totalPages = Math.ceil(data.length / itemsPerPage);
+  const currentItems = filteredData.slice(indexOfFirstItem, indexOfLastItem);
+  const totalPages = Math.ceil(filteredData.length / itemsPerPage);
 
   const handlePageChange = (pageNumber) => {
-    navigate(`/projetos/page/${pageNumber}`);
+    navigate(`/projetos/page/${pageNumber}?search=${encodeURIComponent(searchQuery)}`); // Mantém a query na URL
   };
 
   return (
@@ -72,7 +80,7 @@ const Projetos = () => {
             />
           </Link>
         ))}
-        <p>{page}</p>
+        <p>{currentPage}</p>
       </ListContainer>
 
       <Paginacao

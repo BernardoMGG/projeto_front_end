@@ -25,7 +25,7 @@ root.render(
     <HashRouter>
       <Routes>
         <Route path="/" element={<Projetos />} />
-        <Route path="/projetos/page/:page" element={<Projetos />} /> {/* Ajuste na rota */}
+        <Route path="/projetos/page/:page" element={<Projetos />} /> {/* Apenas uma rota para projetos */}
         <Route path="/projeto/:slug" element={<ProjetoDetalhes />} />
         <Route path="/login" element={<Login />} />
         <Route path="/logout" element={<Logout />} />

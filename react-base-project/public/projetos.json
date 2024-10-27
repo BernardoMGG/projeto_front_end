@@ -1,897 +1,282 @@
 [
-  {
-      "nomeProjeto": "Sistema de Gestão Escolar",
-      "integrantes": ["Bryan Amorim dos Santos", "Carlos Oliveira", "Lucas Mendes", "Bryan Amorim dos Santos", "Carlos Oliveira", "Lucas Mendes"],
-      "detalhamentoProjeto": "Desenvolvimento de um sistema para gerenciar dados de escolas, incluindo matrículas, Pneumoultramicroscopicossilicovulcanoconiótico",
-      "tecnologiasUsadas": ["Java", "MySQL"],
+    {
+      "Nome": "Sistema de Gestão Escolar",
+      "detalhes": "Desenvolvimento de um sistema para gerenciar dados de escolas, incluindo matrículas.",
+      "integrantes": ["Bryan Amorim dos Santos", "Carlos Oliveira", "Lucas Mendes"],
+      "tecnologias": ["Java", "MySQL"],
+      "ferramentas": ["Git"],
+      "Curso": "Engenharia de Software",
+      "unidade": "Barra",
+      "período": "nono",
+      "data-inicio": "2023-01-10",
+      "data-fim": "2023-06-15",
       "Fotodecapa": "/imagens/old-computer-1.jpg",
-      "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-  },
-  {
-      "nomeProjeto": "Aplicativo de Entregas",
+      "fotos": ["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
+    },
+    {
+      "Nome": "Aplicativo de Entregas",
+      "detalhes": "Um app de entregas rápidas que conecta entregadores a clientes.",
       "integrantes": ["Fernanda Costa", "Thiago Ribeiro", "Juliana Martins"],
-      "detalhamentoProjeto": "Pneumoultramicroscopicossilicovulcanoconiótico Um app de entregas rápidas que conecta entregadores a clientes, permitindo rastreamento em tempo real e avaliações. Um app de entregas rápidas que conecta entregadores a clientes, permitindo rastreamento em tempo real e avaliações",
-      "explicacaoBreve": "App de entregas rápidas.",
-      "tecnologiasUsadas": ["Flutter", "Firebase"],
+      "tecnologias": ["Flutter", "Firebase"],
+      "ferramentas": ["Postman"],
+      "Curso": "Ciência de Dados",
+      "unidade": "Centro",
+      "período": "quarto",
+      "data-inicio": "2023-02-01",
+      "data-fim": "2023-05-20",
       "Fotodecapa": "/imagens/old-computer-1.jpg",
-      "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-  },
-  {
-      "nomeProjeto": "E-commerce de Moda",
+      "fotos": ["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
+    },
+    {
+      "Nome": "E-commerce de Moda",
+      "detalhes": "Plataforma de e-commerce para venda de roupas e acessórios.",
       "integrantes": ["Mariana Souza", "Pedro Ferreira", "Renata Lima"],
-      "detalhamentoProjeto": "Plataforma de e-commerce para venda de roupas e acessórios, com carrinho de compras, pagamento integrado e sistema de recomendações. Um app de entregas rápidas que conecta entregadores a clientes, permitindo rastreamento em tempo real e avaliações",
-      "explicacaoBreve": "Loja virtual de moda.",
-      "tecnologiasUsadas": ["React", "Node.js"],
+      "tecnologias": ["React", "Node.js"],
+      "ferramentas": ["Figma"],
+      "Curso": "Análise e Desenvolvimento de Sistemas",
+      "unidade": "Barra",
+      "período": "sétimo",
+      "data-inicio": "2023-03-15",
+      "data-fim": "2023-08-30",
       "Fotodecapa": "/imagens/old-computer-1.jpg",
-      "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-  },
-  {
-      "nomeProjeto": "Plataforma de Ensino ",
+      "fotos": ["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
+    },
+    {
+      "Nome": "Plataforma de Ensino",
+      "detalhes": "Desenvolvimento de uma plataforma EAD com aulas ao vivo.",
       "integrantes": ["Ricardo Alves", "Paula Santana", "João Araújo"],
-      "detalhamentoProjeto": "Desenvolvimento de uma plataforma EAD com aulas ao vivo, fórum de discussão, entrega de atividades e acompanhamento de desempenho.Um app de entregas rápidas que conecta entregadores a clientes, permitindo rastreamento em tempo real e avaliações",
-      "explicacaoBreve": "Plataforma EAD.",
-      "tecnologiasUsadas": ["Python", "Django"],
+      "tecnologias": ["Python", "Django"],
+      "ferramentas": ["Slack"],
+      "Curso": "Engenharia da Computação",
+      "unidade": "Centro",
+      "período": "quarto",
+      "data-inicio": "2023-04-10",
+      "data-fim": "2023-09-10",
       "Fotodecapa": "/imagens/old-computer-1.jpg",
-      "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-  },
-  {
-      "nomeProjeto": "App de Controle Financeiro",
+      "fotos": ["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
+    },
+    {
+      "Nome": "App de Controle Financeiro",
+      "detalhes": "Aplicativo para gerenciar as finanças pessoais.",
       "integrantes": ["Sara Matos", "Leandro Souza", "Felipe Batista"],
-      "detalhamentoProjeto": "Aplicativo para gerenciar as finanças pessoais, controlar gastos, criar orçamentos e visualizar relatórios mensais. Um app de entregas rápidas que conecta entregadores a clientes, permitindo rastreamento em tempo real e avaliações",
-      "explicacaoBreve": "Controle financeiro.",
-      "tecnologiasUsadas": ["Kotlin", "SQLite"],
+      "tecnologias": ["Kotlin", "SQLite"],
+      "ferramentas": ["Trello"],
+      "Curso": "Engenharia de Software",
+      "unidade": "Barra",
+      "período": "sexto",
+      "data-inicio": "2023-05-20",
+      "data-fim": "2023-10-01",
       "Fotodecapa": "/imagens/old-computer-1.jpg",
-      "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-  },
-  {
-      "nomeProjeto": "Sistema de Gestão de Tarefas",
+      "fotos": ["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
+    },
+    {
+      "Nome": "Sistema de Gestão de Tarefas",
+      "detalhes": "Sistema para organizar e gerenciar tarefas, com suporte para colaboração em equipe.",
       "integrantes": ["Amanda Nunes", "Gabriel Moura", "Marcelo Lima"],
-      "detalhamentoProjeto": "Sistema para organizar e gerenciar tarefas, com suporte para colaboração em equipe, prazos e categorização de tarefas.",
-      "explicacaoBreve": "Gerenciador de tarefas.",
-      "tecnologiasUsadas": ["Vue.js", "Node.js"],
+      "tecnologias": ["Vue.js", "Node.js"],
+      "ferramentas": ["JIRA"],
+      "Curso": "Análise e Desenvolvimento de Sistemas",
+      "unidade": "Centro",
+      "período": "quinto",
+      "data-inicio": "2023-03-01",
+      "data-fim": "2023-08-20",
       "Fotodecapa": "/imagens/old-computer-1.jpg",
-      "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-  },
-  {
-      "nomeProjeto": "Chatbot para Atendimento",
+      "fotos": ["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
+    },
+    {
+      "Nome": "Chatbot para Atendimento",
+      "detalhes": "Chatbot automatizado para atendimento ao cliente.",
       "integrantes": ["Isabela Souza", "Vitor Almeida", "Rafaela Dias"],
-      "detalhamentoProjeto": "Chatbot automatizado para atendimento ao cliente, com integração com redes sociais e análise de sentimentos.",
-      "explicacaoBreve": "Chatbot para empresas.",
-      "tecnologiasUsadas": ["Python", "TensorFlow"],
+      "tecnologias": ["Python", "TensorFlow"],
+      "ferramentas": ["Git"],
+      "Curso": "Ciência de Dados",
+      "unidade": "Barra",
+      "período": "nono",
+      "data-inicio": "2023-01-15",
+      "data-fim": "2023-07-01",
       "Fotodecapa": "/imagens/old-computer-1.jpg",
-      "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-  },
-  {
-      "nomeProjeto": "Site de Reserva",
+      "fotos": ["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
+    },
+    {
+      "Nome": "Site de Reserva",
+      "detalhes": "Website para realizar reservas online em restaurantes.",
       "integrantes": ["Bruno Castro", "Daniela Lopes", "Júlio Fernandes"],
-      "detalhamentoProjeto": "Website para realizar reservas online em restaurantes, com opções de personalização e notificações por SMS.",
-      "explicacaoBreve": "Reserva de restaurantes.",
-      "tecnologiasUsadas": ["Ruby on Rails", "PostgreSQL"],
+      "tecnologias": ["Ruby on Rails", "PostgreSQL"],
+      "ferramentas": ["Postman"],
+      "Curso": "Engenharia da Computação",
+      "unidade": "Centro",
+      "período": "quarto",
+      "data-inicio": "2023-04-05",
+      "data-fim": "2023-09-15",
       "Fotodecapa": "/imagens/old-computer-1.jpg",
-      "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-  },
-  {
-      "nomeProjeto": "Sistema de Saúde",
+      "fotos": ["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
+    },
+    {
+      "Nome": "Sistema de Saúde",
+      "detalhes": "Plataforma para monitoramento da saúde de pacientes.",
       "integrantes": ["Vanessa Ribeiro", "Henrique Araújo", "Paulo Monteiro"],
-      "detalhamentoProjeto": "Plataforma para monitoramento da saúde de pacientes, com relatórios automáticos e envio de alertas médicos.",
-      "explicacaoBreve": "Monitoramento de saúde.",
-      "tecnologiasUsadas": ["Java", "MongoDB"],
+      "tecnologias": ["Java", "MongoDB"],
+      "ferramentas": ["Docker"],
+      "Curso": "Análise e Desenvolvimento de Sistemas",
+      "unidade": "Barra",
+      "período": "nono",
+      "data-inicio": "2023-01-20",
+      "data-fim": "2023-07-10",
       "Fotodecapa": "/imagens/old-computer-1.jpg",
-      "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-  },
-  {
-      "nomeProjeto": "Plataforma de Doações Online",
+      "fotos": ["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
+    },
+    {
+      "Nome": "Plataforma de Doações Online",
+      "detalhes": "Sistema que conecta ONGs a doadores.",
       "integrantes": ["Juliana Lima", "Rodrigo Borges", "Caio Campos"],
-      "detalhamentoProjeto": "Sistema que conecta ONGs a doadores, permitindo o acompanhamento de doações e campanhas.",
-      "explicacaoBreve": "Doações para ONGs.",
-      "tecnologiasUsadas": ["PHP", "Laravel"],
+      "tecnologias": ["PHP", "Laravel"],
+      "ferramentas": ["Slack"],
+      "Curso": "Engenharia de Software",
+      "unidade": "Centro",
+      "período": "quinto",
+      "data-inicio": "2023-03-01",
+      "data-fim": "2023-08-01",
       "Fotodecapa": "/imagens/old-computer-1.jpg",
-      "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-  },
-  {
-      "nomeProjeto": "App de Delivery de Comida",
+      "fotos": ["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
+    },
+    {
+      "Nome": "App de Delivery de Comida",
+      "detalhes": "Aplicativo para entrega de comida.",
       "integrantes": ["Patrícia Moreira", "Fábio Rezende", "Marcos Oliveira"],
-      "detalhamentoProjeto": "Aplicativo para entrega de comida, com geolocalização, integração com restaurantes e sistema de avaliação.",
-      "explicacaoBreve": "App de delivery.",
-      "tecnologiasUsadas": ["React Native", "Firebase"],
+      "tecnologias": ["React Native", "Firebase"],
+      "ferramentas": ["Git"],
+      "Curso": "Engenharia da Computação",
+      "unidade": "Barra",
+      "período": "sexto",
+      "data-inicio": "2023-04-10",
+      "data-fim": "2023-09-20",
       "Fotodecapa": "/imagens/old-computer-1.jpg",
-      "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-  },
-  {
-      "nomeProjeto": "Ferramenta de Análise de Dados",
+      "fotos": ["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
+    },
+    {
+      "Nome": "Ferramenta de Análise de Dados",
+      "detalhes": "Ferramenta para análise de grandes volumes de dados.",
       "integrantes": ["Lucas Santos", "Carla Fonseca", "Renato Teixeira"],
-      "detalhamentoProjeto": "Ferramenta para análise de grandes volumes de dados, com visualizações gráficas e relatórios personalizados.",
-      "explicacaoBreve": "Análise de dados.",
-      "tecnologiasUsadas": ["Python", "Pandas"],
+      "tecnologias": ["Python", "Pandas"],
+      "ferramentas": ["Tableau"],
+      "Curso": "Ciência de Dados",
+      "unidade": "Centro",
+      "período": "quarto",
+      "data-inicio": "2023-02-15",
+      "data-fim": "2023-07-25",
       "Fotodecapa": "/imagens/old-computer-1.jpg",
-      "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-  },
-  {
-      "nomeProjeto": "Sistema de Agendamento",
+      "fotos": ["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
+    },
+    {
+      "Nome": "Sistema de Agendamento",
+      "detalhes": "Plataforma que facilita o agendamento de consultas médicas.",
       "integrantes": ["Beatriz Nunes", "Gustavo Lima", "Isabela Castro"],
-      "detalhamentoProjeto": "Plataforma que facilita o agendamento de consultas médicas e dentistas, com sistema de lembretes.",
-      "explicacaoBreve": "Agendamento de consultas.",
-      "tecnologiasUsadas": ["Angular", "Firebase"],
+      "tecnologias": ["Angular", "Firebase"],
+      "ferramentas": ["JIRA"],
+      "Curso": "Engenharia de Software",
+      "unidade": "Barra",
+      "período": "nono",
+      "data-inicio": "2023-01-05",
+      "data-fim": "2023-06-30",
       "Fotodecapa": "/imagens/old-computer-1.jpg",
-      "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-  },
-  {
-      "nomeProjeto": "Rede Social para Fotógrafos",
+      "fotos": ["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
+    },
+    {
+      "Nome": "Rede Social para Fotógrafos",
+      "detalhes": "Uma rede social voltada para fotógrafos.",
       "integrantes": ["Paulo Braga", "Amanda Martins", "Joana Souza"],
-      "detalhamentoProjeto": "Uma rede social voltada para fotógrafos, com galerias de fotos, feedback da comunidade e concursos mensais.",
-      "explicacaoBreve": "Rede social de fotos.",
-      "tecnologiasUsadas": ["React", "Firebase"],
+      "tecnologias": ["React", "Firebase"],
+      "ferramentas": ["Figma"],
+      "Curso": "Análise e Desenvolvimento de Sistemas",
+      "unidade": "Centro",
+      "período": "sexto",
+      "data-inicio": "2023-05-15",
+      "data-fim": "2023-10-15",
       "Fotodecapa": "/imagens/old-computer-2.jpg",
-      "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-  },
-  {
-      "nomeProjeto": "App de Viagens Compartilhadas",
+      "fotos": ["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
+    },
+    {
+      "Nome": "App de Viagens Compartilhadas",
+      "detalhes": "Aplicativo para caronas compartilhadas.",
       "integrantes": ["Victor Carvalho", "Camila Santos", "Rafael Cunha"],
-      "detalhamentoProjeto": "Aplicativo para caronas compartilhadas, com agendamento de viagens, pagamento integrado e perfis verificados.",
-      "explicacaoBreve": "Caronas compartilhadas.",
-      "tecnologiasUsadas": ["Flutter", "Node.js"],
+      "tecnologias": ["Flutter", "Node.js"],
+      "ferramentas": ["Git"],
+      "Curso": "Engenharia de Software",
+      "unidade": "Barra",
+      "período": "quarto",
+      "data-inicio": "2023-03-20",
+      "data-fim": "2023-08-05",
       "Fotodecapa": "/imagens/old-computer-1.jpg",
-      "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-  },
-  {
-      "nomeProjeto": "Plataforma de Vagas de Emprego",
+      "fotos": ["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
+    },
+    {
+      "Nome": "Plataforma de Vagas de Emprego",
+      "detalhes": "Plataforma para busca de empregos.",
       "integrantes": ["Renata Lima", "Eduardo Oliveira", "Marina Costa"],
-      "detalhamentoProjeto": "Plataforma para busca de empregos, com perfis de empresas, candidaturas automáticas e recomendações personalizadas.",
-      "explicacaoBreve": "Busca de emprego.",
-      "tecnologiasUsadas": ["PHP", "MySQL"],
+      "tecnologias": ["PHP", "MySQL"],
+      "ferramentas": ["LinkedIn"],
+      "Curso": "Ciência de Dados",
+      "unidade": "Centro",
+      "período": "nono",
+      "data-inicio": "2023-01-10",
+      "data-fim": "2023-06-05",
       "Fotodecapa": "/imagens/old-computer-1.jpg",
-      "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-  },
-  {
-      "nomeProjeto": "Sistema de Controle de Estoque",
+      "fotos": ["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
+    },
+    {
+      "Nome": "Sistema de Controle de Estoque",
+      "detalhes": "Sistema para gerenciar estoque de lojas.",
       "integrantes": ["Pedro Rocha", "Simone Souza", "Caio Ferreira"],
-      "detalhamentoProjeto": "Sistema para gerenciar estoque de lojas, com relatórios, alertas de reabastecimento e controle de fornecedores.",
-      "explicacaoBreve": "Gerenciamento de estoque.",
-      "tecnologiasUsadas": ["Java", "MongoDB"],
+      "tecnologias": ["Java", "MongoDB"],
+      "ferramentas": ["Git"],
+      "Curso": "Engenharia de Software",
+      "unidade": "Barra",
+      "período": "quarto",
+      "data-inicio": "2023-04-15",
+      "data-fim": "2023-09-30",
       "Fotodecapa": "/imagens/old-computer-1.jpg",
-      "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-  },
-  {
-      "nomeProjeto": "App de Organização de Eventos",
+      "fotos": ["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
+    },
+    {
+      "Nome": "App de Organização de Eventos",
+      "detalhes": "Aplicativo para organização de eventos.",
       "integrantes": ["Luciana Almeida", "Fernando Reis", "Marcela Lima"],
-      "detalhamentoProjeto": "Aplicativo para organização de eventos, com gerenciamento de convidados, localização e controle de inscrições.",
-      "explicacaoBreve": "Organização de eventos.",
-      "tecnologiasUsadas": ["React Native", "Firebase"],
+      "tecnologias": ["React Native", "Firebase"],
+      "ferramentas": ["Slack"],
+      "Curso": "Análise e Desenvolvimento de Sistemas",
+      "unidade": "Centro",
+      "período": "nono",
+      "data-inicio": "2023-01-15",
+      "data-fim": "2023-06-20",
       "Fotodecapa": "/imagens/old-computer-1.jpg",
-      "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-  },
-  {
-      "nomeProjeto": "Plataforma de Crowdfunding",
+      "fotos": ["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
+    },
+    {
+      "Nome": "Plataforma de Crowdfunding",
+      "detalhes": "Plataforma para criação e gerenciamento de campanhas de crowdfunding.",
       "integrantes": ["Thiago Costa", "Vanessa Andrade", "Roberto Dias"],
-      "detalhamentoProjeto": "Plataforma para criação e gerenciamento de campanhas de crowdfunding, com suporte a pagamentos e atualizações dos criadores.",
-      "explicacaoBreve": "Crowdfunding.",
-      "tecnologiasUsadas": ["Ruby on Rails", "PostgreSQL"],
+      "tecnologias": ["Ruby on Rails", "PostgreSQL"],
+      "ferramentas": ["Git"],
+      "Curso": "Engenharia da Computação",
+      "unidade": "Barra",
+      "período": "quarto",
+      "data-inicio": "2023-04-01",
+      "data-fim": "2023-09-25",
       "Fotodecapa": "/imagens/old-computer-1.jpg",
-      "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-  },
-  {
-      "nomeProjeto": "Sistema de Gestão de Academias",
+      "fotos": ["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
+    },
+    {
+      "Nome": "Sistema de Gestão de Academias",
+      "detalhes": "Sistema para academias gerenciarem aulas e controle de alunos.",
       "integrantes": ["Cláudia Pereira", "João Lucas", "Marta Almeida"],
-      "detalhamentoProjeto": "Sistema para academias gerenciarem aulas, controle de alunos, planos de pagamento e acesso a treinos personalizados.",
-      "explicacaoBreve": "Gestão de academias.",
-      "tecnologiasUsadas": ["Python", "Django"],
+      "tecnologias": ["Python", "Django"],
+      "ferramentas": ["Trello"],
+      "Curso": "Análise e Desenvolvimento de Sistemas",
+      "unidade": "Centro",
+      "período": "quarto",
+      "data-inicio": "2023-02-05",
+      "data-fim": "2023-07-15",
       "Fotodecapa": "/imagens/old-computer-1.jpg",
-      "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-  },
-  {
-    "nomeProjeto": "Sistema de Gestão Escolar",
-    "integrantes": ["Bryan Amorim dos Santos", "Carlos Oliveira", "Lucas Mendes", "Bryan Amorim dos Santos", "Carlos Oliveira", "Lucas Mendes"],
-    "detalhamentoProjeto": "Desenvolvimento de um sistema para gerenciar dados de escolas, incluindo matrículas, Pneumoultramicroscopicossilicovulcanoconiótico",
-    "tecnologiasUsadas": ["Java", "MySQL"],
-    "Fotodecapa": "/imagens/old-computer-1.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "Aplicativo de Entregas",
-    "integrantes": ["Fernanda Costa", "Thiago Ribeiro", "Juliana Martins"],
-    "detalhamentoProjeto": "Pneumoultramicroscopicossilicovulcanoconiótico Um app de entregas rápidas que conecta entregadores a clientes, permitindo rastreamento em tempo real e avaliações. Um app de entregas rápidas que conecta entregadores a clientes, permitindo rastreamento em tempo real e avaliações",
-    "explicacaoBreve": "App de entregas rápidas.",
-    "tecnologiasUsadas": ["Flutter", "Firebase"],
-    "Fotodecapa": "/imagens/old-computer-1.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "E-commerce de Moda",
-    "integrantes": ["Mariana Souza", "Pedro Ferreira", "Renata Lima"],
-    "detalhamentoProjeto": "Plataforma de e-commerce para venda de roupas e acessórios, com carrinho de compras, pagamento integrado e sistema de recomendações. Um app de entregas rápidas que conecta entregadores a clientes, permitindo rastreamento em tempo real e avaliações",
-    "explicacaoBreve": "Loja virtual de moda.",
-    "tecnologiasUsadas": ["React", "Node.js"],
-    "Fotodecapa": "/imagens/old-computer-1.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "Plataforma de Ensino ",
-    "integrantes": ["Ricardo Alves", "Paula Santana", "João Araújo"],
-    "detalhamentoProjeto": "Desenvolvimento de uma plataforma EAD com aulas ao vivo, fórum de discussão, entrega de atividades e acompanhamento de desempenho.Um app de entregas rápidas que conecta entregadores a clientes, permitindo rastreamento em tempo real e avaliações",
-    "explicacaoBreve": "Plataforma EAD.",
-    "tecnologiasUsadas": ["Python", "Django"],
-    "Fotodecapa": "/imagens/old-computer-1.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "App de Controle Financeiro",
-    "integrantes": ["Sara Matos", "Leandro Souza", "Felipe Batista"],
-    "detalhamentoProjeto": "Aplicativo para gerenciar as finanças pessoais, controlar gastos, criar orçamentos e visualizar relatórios mensais. Um app de entregas rápidas que conecta entregadores a clientes, permitindo rastreamento em tempo real e avaliações",
-    "explicacaoBreve": "Controle financeiro.",
-    "tecnologiasUsadas": ["Kotlin", "SQLite"],
-    "Fotodecapa": "/imagens/old-computer-1.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "Sistema de Gestão de Tarefas",
-    "integrantes": ["Amanda Nunes", "Gabriel Moura", "Marcelo Lima"],
-    "detalhamentoProjeto": "Sistema para organizar e gerenciar tarefas, com suporte para colaboração em equipe, prazos e categorização de tarefas.",
-    "explicacaoBreve": "Gerenciador de tarefas.",
-    "tecnologiasUsadas": ["Vue.js", "Node.js"],
-    "Fotodecapa": "/imagens/old-computer-1.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "Chatbot para Atendimento",
-    "integrantes": ["Isabela Souza", "Vitor Almeida", "Rafaela Dias"],
-    "detalhamentoProjeto": "Chatbot automatizado para atendimento ao cliente, com integração com redes sociais e análise de sentimentos.",
-    "explicacaoBreve": "Chatbot para empresas.",
-    "tecnologiasUsadas": ["Python", "TensorFlow"],
-    "Fotodecapa": "/imagens/old-computer-1.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "Site de Reserva",
-    "integrantes": ["Bruno Castro", "Daniela Lopes", "Júlio Fernandes"],
-    "detalhamentoProjeto": "Website para realizar reservas online em restaurantes, com opções de personalização e notificações por SMS.",
-    "explicacaoBreve": "Reserva de restaurantes.",
-    "tecnologiasUsadas": ["Ruby on Rails", "PostgreSQL"],
-    "Fotodecapa": "/imagens/old-computer-1.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "Sistema de Saúde",
-    "integrantes": ["Vanessa Ribeiro", "Henrique Araújo", "Paulo Monteiro"],
-    "detalhamentoProjeto": "Plataforma para monitoramento da saúde de pacientes, com relatórios automáticos e envio de alertas médicos.",
-    "explicacaoBreve": "Monitoramento de saúde.",
-    "tecnologiasUsadas": ["Java", "MongoDB"],
-    "Fotodecapa": "/imagens/old-computer-1.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "Plataforma de Doações Online",
-    "integrantes": ["Juliana Lima", "Rodrigo Borges", "Caio Campos"],
-    "detalhamentoProjeto": "Sistema que conecta ONGs a doadores, permitindo o acompanhamento de doações e campanhas.",
-    "explicacaoBreve": "Doações para ONGs.",
-    "tecnologiasUsadas": ["PHP", "Laravel"],
-    "Fotodecapa": "/imagens/old-computer-1.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "App de Delivery de Comida",
-    "integrantes": ["Patrícia Moreira", "Fábio Rezende", "Marcos Oliveira"],
-    "detalhamentoProjeto": "Aplicativo para entrega de comida, com geolocalização, integração com restaurantes e sistema de avaliação.",
-    "explicacaoBreve": "App de delivery.",
-    "tecnologiasUsadas": ["React Native", "Firebase"],
-    "Fotodecapa": "/imagens/old-computer-1.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "Ferramenta de Análise de Dados",
-    "integrantes": ["Lucas Santos", "Carla Fonseca", "Renato Teixeira"],
-    "detalhamentoProjeto": "Ferramenta para análise de grandes volumes de dados, com visualizações gráficas e relatórios personalizados.",
-    "explicacaoBreve": "Análise de dados.",
-    "tecnologiasUsadas": ["Python", "Pandas"],
-    "Fotodecapa": "/imagens/old-computer-1.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "Sistema de Agendamento",
-    "integrantes": ["Beatriz Nunes", "Gustavo Lima", "Isabela Castro"],
-    "detalhamentoProjeto": "Plataforma que facilita o agendamento de consultas médicas e dentistas, com sistema de lembretes.",
-    "explicacaoBreve": "Agendamento de consultas.",
-    "tecnologiasUsadas": ["Angular", "Firebase"],
-    "Fotodecapa": "/imagens/old-computer-1.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "Rede Social para Fotógrafos",
-    "integrantes": ["Paulo Braga", "Amanda Martins", "Joana Souza"],
-    "detalhamentoProjeto": "Uma rede social voltada para fotógrafos, com galerias de fotos, feedback da comunidade e concursos mensais.",
-    "explicacaoBreve": "Rede social de fotos.",
-    "tecnologiasUsadas": ["React", "Firebase"],
-    "Fotodecapa": "/imagens/old-computer-2.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "App de Viagens Compartilhadas",
-    "integrantes": ["Victor Carvalho", "Camila Santos", "Rafael Cunha"],
-    "detalhamentoProjeto": "Aplicativo para caronas compartilhadas, com agendamento de viagens, pagamento integrado e perfis verificados.",
-    "explicacaoBreve": "Caronas compartilhadas.",
-    "tecnologiasUsadas": ["Flutter", "Node.js"],
-    "Fotodecapa": "/imagens/old-computer-1.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "Plataforma de Vagas de Emprego",
-    "integrantes": ["Renata Lima", "Eduardo Oliveira", "Marina Costa"],
-    "detalhamentoProjeto": "Plataforma para busca de empregos, com perfis de empresas, candidaturas automáticas e recomendações personalizadas.",
-    "explicacaoBreve": "Busca de emprego.",
-    "tecnologiasUsadas": ["PHP", "MySQL"],
-    "Fotodecapa": "/imagens/old-computer-1.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "Sistema de Controle de Estoque",
-    "integrantes": ["Pedro Rocha", "Simone Souza", "Caio Ferreira"],
-    "detalhamentoProjeto": "Sistema para gerenciar estoque de lojas, com relatórios, alertas de reabastecimento e controle de fornecedores.",
-    "explicacaoBreve": "Gerenciamento de estoque.",
-    "tecnologiasUsadas": ["Java", "MongoDB"],
-    "Fotodecapa": "/imagens/old-computer-1.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "App de Organização de Eventos",
-    "integrantes": ["Luciana Almeida", "Fernando Reis", "Marcela Lima"],
-    "detalhamentoProjeto": "Aplicativo para organização de eventos, com gerenciamento de convidados, localização e controle de inscrições.",
-    "explicacaoBreve": "Organização de eventos.",
-    "tecnologiasUsadas": ["React Native", "Firebase"],
-    "Fotodecapa": "/imagens/old-computer-1.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "Plataforma de Crowdfunding",
-    "integrantes": ["Thiago Costa", "Vanessa Andrade", "Roberto Dias"],
-    "detalhamentoProjeto": "Plataforma para criação e gerenciamento de campanhas de crowdfunding, com suporte a pagamentos e atualizações dos criadores.",
-    "explicacaoBreve": "Crowdfunding.",
-    "tecnologiasUsadas": ["Ruby on Rails", "PostgreSQL"],
-    "Fotodecapa": "/imagens/old-computer-1.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "Sistema de Gestão de Academias",
-    "integrantes": ["Cláudia Pereira", "João Lucas", "Marta Almeida"],
-    "detalhamentoProjeto": "Sistema para academias gerenciarem aulas, controle de alunos, planos de pagamento e acesso a treinos personalizados.",
-    "explicacaoBreve": "Gestão de academias.",
-    "tecnologiasUsadas": ["Python", "Django"],
-    "Fotodecapa": "/imagens/old-computer-1.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "Sistema de Gestão Escolar",
-    "integrantes": ["Bryan Amorim dos Santos", "Carlos Oliveira", "Lucas Mendes", "Bryan Amorim dos Santos", "Carlos Oliveira", "Lucas Mendes"],
-    "detalhamentoProjeto": "Desenvolvimento de um sistema para gerenciar dados de escolas, incluindo matrículas, Pneumoultramicroscopicossilicovulcanoconiótico",
-    "tecnologiasUsadas": ["Java", "MySQL"],
-    "Fotodecapa": "/imagens/old-computer-1.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "Aplicativo de Entregas",
-    "integrantes": ["Fernanda Costa", "Thiago Ribeiro", "Juliana Martins"],
-    "detalhamentoProjeto": "Pneumoultramicroscopicossilicovulcanoconiótico Um app de entregas rápidas que conecta entregadores a clientes, permitindo rastreamento em tempo real e avaliações. Um app de entregas rápidas que conecta entregadores a clientes, permitindo rastreamento em tempo real e avaliações",
-    "explicacaoBreve": "App de entregas rápidas.",
-    "tecnologiasUsadas": ["Flutter", "Firebase"],
-    "Fotodecapa": "/imagens/old-computer-1.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "E-commerce de Moda",
-    "integrantes": ["Mariana Souza", "Pedro Ferreira", "Renata Lima"],
-    "detalhamentoProjeto": "Plataforma de e-commerce para venda de roupas e acessórios, com carrinho de compras, pagamento integrado e sistema de recomendações. Um app de entregas rápidas que conecta entregadores a clientes, permitindo rastreamento em tempo real e avaliações",
-    "explicacaoBreve": "Loja virtual de moda.",
-    "tecnologiasUsadas": ["React", "Node.js"],
-    "Fotodecapa": "/imagens/old-computer-1.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "Plataforma de Ensino ",
-    "integrantes": ["Ricardo Alves", "Paula Santana", "João Araújo"],
-    "detalhamentoProjeto": "Desenvolvimento de uma plataforma EAD com aulas ao vivo, fórum de discussão, entrega de atividades e acompanhamento de desempenho.Um app de entregas rápidas que conecta entregadores a clientes, permitindo rastreamento em tempo real e avaliações",
-    "explicacaoBreve": "Plataforma EAD.",
-    "tecnologiasUsadas": ["Python", "Django"],
-    "Fotodecapa": "/imagens/old-computer-1.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "App de Controle Financeiro",
-    "integrantes": ["Sara Matos", "Leandro Souza", "Felipe Batista"],
-    "detalhamentoProjeto": "Aplicativo para gerenciar as finanças pessoais, controlar gastos, criar orçamentos e visualizar relatórios mensais. Um app de entregas rápidas que conecta entregadores a clientes, permitindo rastreamento em tempo real e avaliações",
-    "explicacaoBreve": "Controle financeiro.",
-    "tecnologiasUsadas": ["Kotlin", "SQLite"],
-    "Fotodecapa": "/imagens/old-computer-1.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "Sistema de Gestão de Tarefas",
-    "integrantes": ["Amanda Nunes", "Gabriel Moura", "Marcelo Lima"],
-    "detalhamentoProjeto": "Sistema para organizar e gerenciar tarefas, com suporte para colaboração em equipe, prazos e categorização de tarefas.",
-    "explicacaoBreve": "Gerenciador de tarefas.",
-    "tecnologiasUsadas": ["Vue.js", "Node.js"],
-    "Fotodecapa": "/imagens/old-computer-1.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "Chatbot para Atendimento",
-    "integrantes": ["Isabela Souza", "Vitor Almeida", "Rafaela Dias"],
-    "detalhamentoProjeto": "Chatbot automatizado para atendimento ao cliente, com integração com redes sociais e análise de sentimentos.",
-    "explicacaoBreve": "Chatbot para empresas.",
-    "tecnologiasUsadas": ["Python", "TensorFlow"],
-    "Fotodecapa": "/imagens/old-computer-1.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "Site de Reserva",
-    "integrantes": ["Bruno Castro", "Daniela Lopes", "Júlio Fernandes"],
-    "detalhamentoProjeto": "Website para realizar reservas online em restaurantes, com opções de personalização e notificações por SMS.",
-    "explicacaoBreve": "Reserva de restaurantes.",
-    "tecnologiasUsadas": ["Ruby on Rails", "PostgreSQL"],
-    "Fotodecapa": "/imagens/old-computer-1.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "Sistema de Saúde",
-    "integrantes": ["Vanessa Ribeiro", "Henrique Araújo", "Paulo Monteiro"],
-    "detalhamentoProjeto": "Plataforma para monitoramento da saúde de pacientes, com relatórios automáticos e envio de alertas médicos.",
-    "explicacaoBreve": "Monitoramento de saúde.",
-    "tecnologiasUsadas": ["Java", "MongoDB"],
-    "Fotodecapa": "/imagens/old-computer-1.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "Plataforma de Doações Online",
-    "integrantes": ["Juliana Lima", "Rodrigo Borges", "Caio Campos"],
-    "detalhamentoProjeto": "Sistema que conecta ONGs a doadores, permitindo o acompanhamento de doações e campanhas.",
-    "explicacaoBreve": "Doações para ONGs.",
-    "tecnologiasUsadas": ["PHP", "Laravel"],
-    "Fotodecapa": "/imagens/old-computer-1.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "App de Delivery de Comida",
-    "integrantes": ["Patrícia Moreira", "Fábio Rezende", "Marcos Oliveira"],
-    "detalhamentoProjeto": "Aplicativo para entrega de comida, com geolocalização, integração com restaurantes e sistema de avaliação.",
-    "explicacaoBreve": "App de delivery.",
-    "tecnologiasUsadas": ["React Native", "Firebase"],
-    "Fotodecapa": "/imagens/old-computer-1.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "Ferramenta de Análise de Dados",
-    "integrantes": ["Lucas Santos", "Carla Fonseca", "Renato Teixeira"],
-    "detalhamentoProjeto": "Ferramenta para análise de grandes volumes de dados, com visualizações gráficas e relatórios personalizados.",
-    "explicacaoBreve": "Análise de dados.",
-    "tecnologiasUsadas": ["Python", "Pandas"],
-    "Fotodecapa": "/imagens/old-computer-1.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "Sistema de Agendamento",
-    "integrantes": ["Beatriz Nunes", "Gustavo Lima", "Isabela Castro"],
-    "detalhamentoProjeto": "Plataforma que facilita o agendamento de consultas médicas e dentistas, com sistema de lembretes.",
-    "explicacaoBreve": "Agendamento de consultas.",
-    "tecnologiasUsadas": ["Angular", "Firebase"],
-    "Fotodecapa": "/imagens/old-computer-1.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "Rede Social para Fotógrafos",
-    "integrantes": ["Paulo Braga", "Amanda Martins", "Joana Souza"],
-    "detalhamentoProjeto": "Uma rede social voltada para fotógrafos, com galerias de fotos, feedback da comunidade e concursos mensais.",
-    "explicacaoBreve": "Rede social de fotos.",
-    "tecnologiasUsadas": ["React", "Firebase"],
-    "Fotodecapa": "/imagens/old-computer-2.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "App de Viagens Compartilhadas",
-    "integrantes": ["Victor Carvalho", "Camila Santos", "Rafael Cunha"],
-    "detalhamentoProjeto": "Aplicativo para caronas compartilhadas, com agendamento de viagens, pagamento integrado e perfis verificados.",
-    "explicacaoBreve": "Caronas compartilhadas.",
-    "tecnologiasUsadas": ["Flutter", "Node.js"],
-    "Fotodecapa": "/imagens/old-computer-1.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "Plataforma de Vagas de Emprego",
-    "integrantes": ["Renata Lima", "Eduardo Oliveira", "Marina Costa"],
-    "detalhamentoProjeto": "Plataforma para busca de empregos, com perfis de empresas, candidaturas automáticas e recomendações personalizadas.",
-    "explicacaoBreve": "Busca de emprego.",
-    "tecnologiasUsadas": ["PHP", "MySQL"],
-    "Fotodecapa": "/imagens/old-computer-1.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "Sistema de Controle de Estoque",
-    "integrantes": ["Pedro Rocha", "Simone Souza", "Caio Ferreira"],
-    "detalhamentoProjeto": "Sistema para gerenciar estoque de lojas, com relatórios, alertas de reabastecimento e controle de fornecedores.",
-    "explicacaoBreve": "Gerenciamento de estoque.",
-    "tecnologiasUsadas": ["Java", "MongoDB"],
-    "Fotodecapa": "/imagens/old-computer-1.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "App de Organização de Eventos",
-    "integrantes": ["Luciana Almeida", "Fernando Reis", "Marcela Lima"],
-    "detalhamentoProjeto": "Aplicativo para organização de eventos, com gerenciamento de convidados, localização e controle de inscrições.",
-    "explicacaoBreve": "Organização de eventos.",
-    "tecnologiasUsadas": ["React Native", "Firebase"],
-    "Fotodecapa": "/imagens/old-computer-1.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "Plataforma de Crowdfunding",
-    "integrantes": ["Thiago Costa", "Vanessa Andrade", "Roberto Dias"],
-    "detalhamentoProjeto": "Plataforma para criação e gerenciamento de campanhas de crowdfunding, com suporte a pagamentos e atualizações dos criadores.",
-    "explicacaoBreve": "Crowdfunding.",
-    "tecnologiasUsadas": ["Ruby on Rails", "PostgreSQL"],
-    "Fotodecapa": "/imagens/old-computer-1.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "Sistema de Gestão de Academias",
-    "integrantes": ["Cláudia Pereira", "João Lucas", "Marta Almeida"],
-    "detalhamentoProjeto": "Sistema para academias gerenciarem aulas, controle de alunos, planos de pagamento e acesso a treinos personalizados.",
-    "explicacaoBreve": "Gestão de academias.",
-    "tecnologiasUsadas": ["Python", "Django"],
-    "Fotodecapa": "/imagens/old-computer-1.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "Sistema de Gestão Escolar",
-    "integrantes": ["Bryan Amorim dos Santos", "Carlos Oliveira", "Lucas Mendes", "Bryan Amorim dos Santos", "Carlos Oliveira", "Lucas Mendes"],
-    "detalhamentoProjeto": "Desenvolvimento de um sistema para gerenciar dados de escolas, incluindo matrículas, Pneumoultramicroscopicossilicovulcanoconiótico",
-    "tecnologiasUsadas": ["Java", "MySQL"],
-    "Fotodecapa": "/imagens/old-computer-1.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "Aplicativo de Entregas",
-    "integrantes": ["Fernanda Costa", "Thiago Ribeiro", "Juliana Martins"],
-    "detalhamentoProjeto": "Pneumoultramicroscopicossilicovulcanoconiótico Um app de entregas rápidas que conecta entregadores a clientes, permitindo rastreamento em tempo real e avaliações. Um app de entregas rápidas que conecta entregadores a clientes, permitindo rastreamento em tempo real e avaliações",
-    "explicacaoBreve": "App de entregas rápidas.",
-    "tecnologiasUsadas": ["Flutter", "Firebase"],
-    "Fotodecapa": "/imagens/old-computer-1.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "E-commerce de Moda",
-    "integrantes": ["Mariana Souza", "Pedro Ferreira", "Renata Lima"],
-    "detalhamentoProjeto": "Plataforma de e-commerce para venda de roupas e acessórios, com carrinho de compras, pagamento integrado e sistema de recomendações. Um app de entregas rápidas que conecta entregadores a clientes, permitindo rastreamento em tempo real e avaliações",
-    "explicacaoBreve": "Loja virtual de moda.",
-    "tecnologiasUsadas": ["React", "Node.js"],
-    "Fotodecapa": "/imagens/old-computer-1.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "Plataforma de Ensino ",
-    "integrantes": ["Ricardo Alves", "Paula Santana", "João Araújo"],
-    "detalhamentoProjeto": "Desenvolvimento de uma plataforma EAD com aulas ao vivo, fórum de discussão, entrega de atividades e acompanhamento de desempenho.Um app de entregas rápidas que conecta entregadores a clientes, permitindo rastreamento em tempo real e avaliações",
-    "explicacaoBreve": "Plataforma EAD.",
-    "tecnologiasUsadas": ["Python", "Django"],
-    "Fotodecapa": "/imagens/old-computer-1.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "App de Controle Financeiro",
-    "integrantes": ["Sara Matos", "Leandro Souza", "Felipe Batista"],
-    "detalhamentoProjeto": "Aplicativo para gerenciar as finanças pessoais, controlar gastos, criar orçamentos e visualizar relatórios mensais. Um app de entregas rápidas que conecta entregadores a clientes, permitindo rastreamento em tempo real e avaliações",
-    "explicacaoBreve": "Controle financeiro.",
-    "tecnologiasUsadas": ["Kotlin", "SQLite"],
-    "Fotodecapa": "/imagens/old-computer-1.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "Sistema de Gestão de Tarefas",
-    "integrantes": ["Amanda Nunes", "Gabriel Moura", "Marcelo Lima"],
-    "detalhamentoProjeto": "Sistema para organizar e gerenciar tarefas, com suporte para colaboração em equipe, prazos e categorização de tarefas.",
-    "explicacaoBreve": "Gerenciador de tarefas.",
-    "tecnologiasUsadas": ["Vue.js", "Node.js"],
-    "Fotodecapa": "/imagens/old-computer-1.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "Chatbot para Atendimento",
-    "integrantes": ["Isabela Souza", "Vitor Almeida", "Rafaela Dias"],
-    "detalhamentoProjeto": "Chatbot automatizado para atendimento ao cliente, com integração com redes sociais e análise de sentimentos.",
-    "explicacaoBreve": "Chatbot para empresas.",
-    "tecnologiasUsadas": ["Python", "TensorFlow"],
-    "Fotodecapa": "/imagens/old-computer-1.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "Site de Reserva",
-    "integrantes": ["Bruno Castro", "Daniela Lopes", "Júlio Fernandes"],
-    "detalhamentoProjeto": "Website para realizar reservas online em restaurantes, com opções de personalização e notificações por SMS.",
-    "explicacaoBreve": "Reserva de restaurantes.",
-    "tecnologiasUsadas": ["Ruby on Rails", "PostgreSQL"],
-    "Fotodecapa": "/imagens/old-computer-1.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "Sistema de Saúde",
-    "integrantes": ["Vanessa Ribeiro", "Henrique Araújo", "Paulo Monteiro"],
-    "detalhamentoProjeto": "Plataforma para monitoramento da saúde de pacientes, com relatórios automáticos e envio de alertas médicos.",
-    "explicacaoBreve": "Monitoramento de saúde.",
-    "tecnologiasUsadas": ["Java", "MongoDB"],
-    "Fotodecapa": "/imagens/old-computer-1.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "Plataforma de Doações Online",
-    "integrantes": ["Juliana Lima", "Rodrigo Borges", "Caio Campos"],
-    "detalhamentoProjeto": "Sistema que conecta ONGs a doadores, permitindo o acompanhamento de doações e campanhas.",
-    "explicacaoBreve": "Doações para ONGs.",
-    "tecnologiasUsadas": ["PHP", "Laravel"],
-    "Fotodecapa": "/imagens/old-computer-1.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "App de Delivery de Comida",
-    "integrantes": ["Patrícia Moreira", "Fábio Rezende", "Marcos Oliveira"],
-    "detalhamentoProjeto": "Aplicativo para entrega de comida, com geolocalização, integração com restaurantes e sistema de avaliação.",
-    "explicacaoBreve": "App de delivery.",
-    "tecnologiasUsadas": ["React Native", "Firebase"],
-    "Fotodecapa": "/imagens/old-computer-1.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "Ferramenta de Análise de Dados",
-    "integrantes": ["Lucas Santos", "Carla Fonseca", "Renato Teixeira"],
-    "detalhamentoProjeto": "Ferramenta para análise de grandes volumes de dados, com visualizações gráficas e relatórios personalizados.",
-    "explicacaoBreve": "Análise de dados.",
-    "tecnologiasUsadas": ["Python", "Pandas"],
-    "Fotodecapa": "/imagens/old-computer-1.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "Sistema de Agendamento",
-    "integrantes": ["Beatriz Nunes", "Gustavo Lima", "Isabela Castro"],
-    "detalhamentoProjeto": "Plataforma que facilita o agendamento de consultas médicas e dentistas, com sistema de lembretes.",
-    "explicacaoBreve": "Agendamento de consultas.",
-    "tecnologiasUsadas": ["Angular", "Firebase"],
-    "Fotodecapa": "/imagens/old-computer-1.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "Rede Social para Fotógrafos",
-    "integrantes": ["Paulo Braga", "Amanda Martins", "Joana Souza"],
-    "detalhamentoProjeto": "Uma rede social voltada para fotógrafos, com galerias de fotos, feedback da comunidade e concursos mensais.",
-    "explicacaoBreve": "Rede social de fotos.",
-    "tecnologiasUsadas": ["React", "Firebase"],
-    "Fotodecapa": "/imagens/old-computer-2.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "App de Viagens Compartilhadas",
-    "integrantes": ["Victor Carvalho", "Camila Santos", "Rafael Cunha"],
-    "detalhamentoProjeto": "Aplicativo para caronas compartilhadas, com agendamento de viagens, pagamento integrado e perfis verificados.",
-    "explicacaoBreve": "Caronas compartilhadas.",
-    "tecnologiasUsadas": ["Flutter", "Node.js"],
-    "Fotodecapa": "/imagens/old-computer-1.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "Plataforma de Vagas de Emprego",
-    "integrantes": ["Renata Lima", "Eduardo Oliveira", "Marina Costa"],
-    "detalhamentoProjeto": "Plataforma para busca de empregos, com perfis de empresas, candidaturas automáticas e recomendações personalizadas.",
-    "explicacaoBreve": "Busca de emprego.",
-    "tecnologiasUsadas": ["PHP", "MySQL"],
-    "Fotodecapa": "/imagens/old-computer-1.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "Sistema de Controle de Estoque",
-    "integrantes": ["Pedro Rocha", "Simone Souza", "Caio Ferreira"],
-    "detalhamentoProjeto": "Sistema para gerenciar estoque de lojas, com relatórios, alertas de reabastecimento e controle de fornecedores.",
-    "explicacaoBreve": "Gerenciamento de estoque.",
-    "tecnologiasUsadas": ["Java", "MongoDB"],
-    "Fotodecapa": "/imagens/old-computer-1.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "App de Organização de Eventos",
-    "integrantes": ["Luciana Almeida", "Fernando Reis", "Marcela Lima"],
-    "detalhamentoProjeto": "Aplicativo para organização de eventos, com gerenciamento de convidados, localização e controle de inscrições.",
-    "explicacaoBreve": "Organização de eventos.",
-    "tecnologiasUsadas": ["React Native", "Firebase"],
-    "Fotodecapa": "/imagens/old-computer-1.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "Plataforma de Crowdfunding",
-    "integrantes": ["Thiago Costa", "Vanessa Andrade", "Roberto Dias"],
-    "detalhamentoProjeto": "Plataforma para criação e gerenciamento de campanhas de crowdfunding, com suporte a pagamentos e atualizações dos criadores.",
-    "explicacaoBreve": "Crowdfunding.",
-    "tecnologiasUsadas": ["Ruby on Rails", "PostgreSQL"],
-    "Fotodecapa": "/imagens/old-computer-1.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "Sistema de Gestão de Academias",
-    "integrantes": ["Cláudia Pereira", "João Lucas", "Marta Almeida"],
-    "detalhamentoProjeto": "Sistema para academias gerenciarem aulas, controle de alunos, planos de pagamento e acesso a treinos personalizados.",
-    "explicacaoBreve": "Gestão de academias.",
-    "tecnologiasUsadas": ["Python", "Django"],
-    "Fotodecapa": "/imagens/old-computer-1.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "Sistema de Gestão Escolar",
-    "integrantes": ["Bryan Amorim dos Santos", "Carlos Oliveira", "Lucas Mendes", "Bryan Amorim dos Santos", "Carlos Oliveira", "Lucas Mendes"],
-    "detalhamentoProjeto": "Desenvolvimento de um sistema para gerenciar dados de escolas, incluindo matrículas, Pneumoultramicroscopicossilicovulcanoconiótico",
-    "tecnologiasUsadas": ["Java", "MySQL"],
-    "Fotodecapa": "/imagens/old-computer-1.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "Aplicativo de Entregas",
-    "integrantes": ["Fernanda Costa", "Thiago Ribeiro", "Juliana Martins"],
-    "detalhamentoProjeto": "Pneumoultramicroscopicossilicovulcanoconiótico Um app de entregas rápidas que conecta entregadores a clientes, permitindo rastreamento em tempo real e avaliações. Um app de entregas rápidas que conecta entregadores a clientes, permitindo rastreamento em tempo real e avaliações",
-    "explicacaoBreve": "App de entregas rápidas.",
-    "tecnologiasUsadas": ["Flutter", "Firebase"],
-    "Fotodecapa": "/imagens/old-computer-1.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "E-commerce de Moda",
-    "integrantes": ["Mariana Souza", "Pedro Ferreira", "Renata Lima"],
-    "detalhamentoProjeto": "Plataforma de e-commerce para venda de roupas e acessórios, com carrinho de compras, pagamento integrado e sistema de recomendações. Um app de entregas rápidas que conecta entregadores a clientes, permitindo rastreamento em tempo real e avaliações",
-    "explicacaoBreve": "Loja virtual de moda.",
-    "tecnologiasUsadas": ["React", "Node.js"],
-    "Fotodecapa": "/imagens/old-computer-1.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "Plataforma de Ensino ",
-    "integrantes": ["Ricardo Alves", "Paula Santana", "João Araújo"],
-    "detalhamentoProjeto": "Desenvolvimento de uma plataforma EAD com aulas ao vivo, fórum de discussão, entrega de atividades e acompanhamento de desempenho.Um app de entregas rápidas que conecta entregadores a clientes, permitindo rastreamento em tempo real e avaliações",
-    "explicacaoBreve": "Plataforma EAD.",
-    "tecnologiasUsadas": ["Python", "Django"],
-    "Fotodecapa": "/imagens/old-computer-1.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "App de Controle Financeiro",
-    "integrantes": ["Sara Matos", "Leandro Souza", "Felipe Batista"],
-    "detalhamentoProjeto": "Aplicativo para gerenciar as finanças pessoais, controlar gastos, criar orçamentos e visualizar relatórios mensais. Um app de entregas rápidas que conecta entregadores a clientes, permitindo rastreamento em tempo real e avaliações",
-    "explicacaoBreve": "Controle financeiro.",
-    "tecnologiasUsadas": ["Kotlin", "SQLite"],
-    "Fotodecapa": "/imagens/old-computer-1.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "Sistema de Gestão de Tarefas",
-    "integrantes": ["Amanda Nunes", "Gabriel Moura", "Marcelo Lima"],
-    "detalhamentoProjeto": "Sistema para organizar e gerenciar tarefas, com suporte para colaboração em equipe, prazos e categorização de tarefas.",
-    "explicacaoBreve": "Gerenciador de tarefas.",
-    "tecnologiasUsadas": ["Vue.js", "Node.js"],
-    "Fotodecapa": "/imagens/old-computer-1.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "Chatbot para Atendimento",
-    "integrantes": ["Isabela Souza", "Vitor Almeida", "Rafaela Dias"],
-    "detalhamentoProjeto": "Chatbot automatizado para atendimento ao cliente, com integração com redes sociais e análise de sentimentos.",
-    "explicacaoBreve": "Chatbot para empresas.",
-    "tecnologiasUsadas": ["Python", "TensorFlow"],
-    "Fotodecapa": "/imagens/old-computer-1.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "Site de Reserva",
-    "integrantes": ["Bruno Castro", "Daniela Lopes", "Júlio Fernandes"],
-    "detalhamentoProjeto": "Website para realizar reservas online em restaurantes, com opções de personalização e notificações por SMS.",
-    "explicacaoBreve": "Reserva de restaurantes.",
-    "tecnologiasUsadas": ["Ruby on Rails", "PostgreSQL"],
-    "Fotodecapa": "/imagens/old-computer-1.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "Sistema de Saúde",
-    "integrantes": ["Vanessa Ribeiro", "Henrique Araújo", "Paulo Monteiro"],
-    "detalhamentoProjeto": "Plataforma para monitoramento da saúde de pacientes, com relatórios automáticos e envio de alertas médicos.",
-    "explicacaoBreve": "Monitoramento de saúde.",
-    "tecnologiasUsadas": ["Java", "MongoDB"],
-    "Fotodecapa": "/imagens/old-computer-1.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "Plataforma de Doações Online",
-    "integrantes": ["Juliana Lima", "Rodrigo Borges", "Caio Campos"],
-    "detalhamentoProjeto": "Sistema que conecta ONGs a doadores, permitindo o acompanhamento de doações e campanhas.",
-    "explicacaoBreve": "Doações para ONGs.",
-    "tecnologiasUsadas": ["PHP", "Laravel"],
-    "Fotodecapa": "/imagens/old-computer-1.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "App de Delivery de Comida",
-    "integrantes": ["Patrícia Moreira", "Fábio Rezende", "Marcos Oliveira"],
-    "detalhamentoProjeto": "Aplicativo para entrega de comida, com geolocalização, integração com restaurantes e sistema de avaliação.",
-    "explicacaoBreve": "App de delivery.",
-    "tecnologiasUsadas": ["React Native", "Firebase"],
-    "Fotodecapa": "/imagens/old-computer-1.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "Ferramenta de Análise de Dados",
-    "integrantes": ["Lucas Santos", "Carla Fonseca", "Renato Teixeira"],
-    "detalhamentoProjeto": "Ferramenta para análise de grandes volumes de dados, com visualizações gráficas e relatórios personalizados.",
-    "explicacaoBreve": "Análise de dados.",
-    "tecnologiasUsadas": ["Python", "Pandas"],
-    "Fotodecapa": "/imagens/old-computer-1.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "Sistema de Agendamento",
-    "integrantes": ["Beatriz Nunes", "Gustavo Lima", "Isabela Castro"],
-    "detalhamentoProjeto": "Plataforma que facilita o agendamento de consultas médicas e dentistas, com sistema de lembretes.",
-    "explicacaoBreve": "Agendamento de consultas.",
-    "tecnologiasUsadas": ["Angular", "Firebase"],
-    "Fotodecapa": "/imagens/old-computer-1.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "Rede Social para Fotógrafos",
-    "integrantes": ["Paulo Braga", "Amanda Martins", "Joana Souza"],
-    "detalhamentoProjeto": "Uma rede social voltada para fotógrafos, com galerias de fotos, feedback da comunidade e concursos mensais.",
-    "explicacaoBreve": "Rede social de fotos.",
-    "tecnologiasUsadas": ["React", "Firebase"],
-    "Fotodecapa": "/imagens/old-computer-2.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "App de Viagens Compartilhadas",
-    "integrantes": ["Victor Carvalho", "Camila Santos", "Rafael Cunha"],
-    "detalhamentoProjeto": "Aplicativo para caronas compartilhadas, com agendamento de viagens, pagamento integrado e perfis verificados.",
-    "explicacaoBreve": "Caronas compartilhadas.",
-    "tecnologiasUsadas": ["Flutter", "Node.js"],
-    "Fotodecapa": "/imagens/old-computer-1.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "Plataforma de Vagas de Emprego",
-    "integrantes": ["Renata Lima", "Eduardo Oliveira", "Marina Costa"],
-    "detalhamentoProjeto": "Plataforma para busca de empregos, com perfis de empresas, candidaturas automáticas e recomendações personalizadas.",
-    "explicacaoBreve": "Busca de emprego.",
-    "tecnologiasUsadas": ["PHP", "MySQL"],
-    "Fotodecapa": "/imagens/old-computer-1.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "Sistema de Controle de Estoque",
-    "integrantes": ["Pedro Rocha", "Simone Souza", "Caio Ferreira"],
-    "detalhamentoProjeto": "Sistema para gerenciar estoque de lojas, com relatórios, alertas de reabastecimento e controle de fornecedores.",
-    "explicacaoBreve": "Gerenciamento de estoque.",
-    "tecnologiasUsadas": ["Java", "MongoDB"],
-    "Fotodecapa": "/imagens/old-computer-1.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "App de Organização de Eventos",
-    "integrantes": ["Luciana Almeida", "Fernando Reis", "Marcela Lima"],
-    "detalhamentoProjeto": "Aplicativo para organização de eventos, com gerenciamento de convidados, localização e controle de inscrições.",
-    "explicacaoBreve": "Organização de eventos.",
-    "tecnologiasUsadas": ["React Native", "Firebase"],
-    "Fotodecapa": "/imagens/old-computer-1.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "Plataforma de Crowdfunding",
-    "integrantes": ["Thiago Costa", "Vanessa Andrade", "Roberto Dias"],
-    "detalhamentoProjeto": "Plataforma para criação e gerenciamento de campanhas de crowdfunding, com suporte a pagamentos e atualizações dos criadores.",
-    "explicacaoBreve": "Crowdfunding.",
-    "tecnologiasUsadas": ["Ruby on Rails", "PostgreSQL"],
-    "Fotodecapa": "/imagens/old-computer-1.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-},
-{
-    "nomeProjeto": "Sistema de Gestão de Academias",
-    "integrantes": ["Cláudia Pereira", "João Lucas", "Marta Almeida"],
-    "detalhamentoProjeto": "Sistema para academias gerenciarem aulas, controle de alunos, planos de pagamento e acesso a treinos personalizados.",
-    "explicacaoBreve": "Gestão de academias.",
-    "tecnologiasUsadas": ["Python", "Django"],
-    "Fotodecapa": "/imagens/old-computer-1.jpg",
-    "fotos":["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-}
-]
+      "fotos": ["/imagens/old-computer-1.jpg", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
+    }
+  ]

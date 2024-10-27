@@ -3,7 +3,7 @@ import { Link, useNavigate, useLocation } from "react-router-dom";
 import { Top, BottomBar } from "./Style";
 import { useState } from "react";
 
-const Header = () => {
+const Header = ({ tecnologiasUsadas, ferramentasUsadas, cursos, periodos, unidades }) => {
   const [searchQuery, setSearchQuery] = useState('');
   const navigate = useNavigate();
   const location = useLocation();
@@ -18,7 +18,7 @@ const Header = () => {
   };
 
   const getPageTitle = () => {
-    const accessToken = window.sessionStorage.getItem('accessToken'); //Aproveitei pra verificar se é ADM aqui dentro dessa função logo
+    const accessToken = window.sessionStorage.getItem('accessToken');
 
     if (location.pathname.startsWith("/projetos")) {
       botaodireita = accessToken ? "Adicionar Projeto" : "";
@@ -55,10 +55,11 @@ const Header = () => {
             onChange={(e) => setSearchQuery(e.target.value)}
           />
         </form>
-        {window.sessionStorage.getItem('accessToken')
-          ? (<Link to="/logout" className="logout">Logout</Link> )
-          : ( console.log("adm logado") )
-        }
+        {window.sessionStorage.getItem('accessToken') ? (
+          <Link to="/logout" className="logout">Logout</Link>
+        ) : (
+          console.log("adm logado")
+        )}
       </Top>
 
       <BottomBar>
@@ -68,32 +69,37 @@ const Header = () => {
             <div className="filtro">
               <select>
                 <option value="" disabled selected hidden>Tecnologia ⮟</option>
-                <option value="tecnologia1">Tecnologia 1</option>
-                <option value="tecnologia2">Tecnologia 2</option>
+                {tecnologiasUsadas.map((tec, index) => (
+                  <option key={index} value={tec}>{tec}</option>
+                ))}
               </select>
 
               <select>
                 <option value="" disabled selected hidden>Ferramenta ⮟</option>
-                <option value="ferramenta1">Ferramenta 1</option>
-                <option value="ferramenta2">Ferramenta 2</option>
+                {ferramentasUsadas.map((ferr, index) => (
+                  <option key={index} value={ferr}>{ferr}</option>
+                ))}
               </select>
 
               <select>
                 <option value="" disabled selected hidden>Curso ⮟</option>
-                <option value="curso1">Curso 1</option>
-                <option value="curso2">Curso 2</option>
+                {cursos.map((curso, index) => (
+                  <option key={index} value={curso}>{curso}</option>
+                ))}
               </select>
 
               <select>
                 <option value="" disabled selected hidden>Período ⮟</option>
-                <option value="periodo1">Período 1</option>
-                <option value="periodo2">Período 2</option>
+                {periodos.map((periodo, index) => (
+                  <option key={index} value={periodo}>{periodo}</option>
+                ))}
               </select>
 
               <select>
                 <option value="" disabled selected hidden>Unidade ⮟</option>
-                <option value="unidade1">Unidade 1</option>
-                <option value="unidade2">Unidade 2</option>
+                {unidades.map((unidade, index) => (
+                  <option key={index} value={unidade}>{unidade}</option>
+                ))}
               </select>
             </div>
           )}
@@ -104,6 +110,6 @@ const Header = () => {
       </BottomBar>
     </>
   );
-}
+};
 
 export default Header;

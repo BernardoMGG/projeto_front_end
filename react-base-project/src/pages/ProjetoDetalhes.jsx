@@ -95,7 +95,7 @@ const ProjetoDetalhes = () => {
       if (dados.code === 400) {
         setErro(dados);
       } else {
-        const projetoSelecionado = dados.find(proj => gerarSlug(proj.nomeProjeto) === slug);
+        const projetoSelecionado = dados.find(proj => gerarSlug(proj.Nome) === slug);
         setProjeto(projetoSelecionado);
       }
 
@@ -126,19 +126,18 @@ const ProjetoDetalhes = () => {
     <Base>
       <Container>
         <ProjectBox>
-          <Title>{projeto.nomeProjeto}</Title>
+          <Title>{projeto.Nome}</Title>
           <ImageBox>
-            <img src={projeto.Fotodecapa} alt={`Capa do projeto ${projeto.nomeProjeto}`} />
+            <img src={projeto.Fotodecapa} alt={`Capa do projeto ${projeto.Nome}`} />
           </ImageBox>
           <InfoBox>
             <Participants>
               <strong>Integrantes:</strong> {projeto.integrantes.join(", ")}
             </Participants>
-            <p><strong>Detalhamento:</strong> {projeto.detalhamentoProjeto}</p>
-            <p><strong>Breve Explicação:</strong> {projeto.explicacaoBreve}</p>
+            <p><strong>Detalhamento:</strong> {projeto.detalhes}</p>
             <p><strong>Tecnologias Usadas:</strong></p>
             <TechnologyList>
-              {projeto.tecnologiasUsadas.map((tech, index) => (
+              {projeto.tecnologias.map((tech, index) => (
                 <li key={index}>{tech}</li>
               ))}
             </TechnologyList>
@@ -150,6 +149,7 @@ const ProjetoDetalhes = () => {
                 <img src={foto} alt={`Foto ${index + 1}`} />
               </PhotoItem>
             ))}
+            
           </PhotoGallery>
         </ProjectBox>
       </Container>

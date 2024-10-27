@@ -47,7 +47,7 @@ const Projetos = () => {
   }, []);
 
   const filteredData = searchQuery
-    ? data.filter(projeto => projeto.nomeProjeto.toLowerCase().includes(searchQuery.toLowerCase()))
+    ? data.filter(projeto => projeto.Nome.toLowerCase().includes(searchQuery.toLowerCase()))
     : data;
 
   const indexOfLastItem = currentPage * itemsPerPage;
@@ -71,16 +71,15 @@ const Projetos = () => {
           </div>
         )}
         {currentItems.map((projeto, index) => (
-          <Link to={`/projeto/${gerarSlug(projeto.nomeProjeto)}`} key={index} style={{ textDecoration: 'none' }}>
+          <Link to={`/projeto/${gerarSlug(projeto.Nome)}`} key={index} style={{ textDecoration: 'none' }}>
             <AtletaCard
-              nome={projeto.nomeProjeto}
+              nome={projeto.Nome}
               src={projeto.Fotodecapa}
-              detalhamento={projeto.detalhamentoProjeto}
+              detalhamento={projeto.detalhes}
               integrantes={projeto.integrantes}
             />
           </Link>
         ))}
-        <p>{currentPage}</p>
       </ListContainer>
 
       <Paginacao

@@ -1,7 +1,7 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 const Top = styled.header`
-  padding: .5em 2em;
+  padding: 0.5em 2em;
   background-color: var(--secundaria);
   display: flex;
   flex-direction: row;
@@ -11,17 +11,18 @@ const Top = styled.header`
   top: 0;
   z-index: 1000;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
   a {
     text-align: center;
-    padding: .3em;
-    margin: 0 .7em;
+    padding: 0.3em;
+    margin: 0 0.7em;
     min-width: 5em;
     text-decoration: none;
     font-weight: bold;
     color: var(--detalhe);
     text-transform: uppercase;
-    /*border-radius: .3em;*/
-    &:hover{
+
+    &:hover {
       text-decoration: underline;
     }
   }
@@ -29,7 +30,6 @@ const Top = styled.header`
   .logout {
     margin-left: auto;
   }
-
 
   input[type="text"] {
     padding-left: 0.5em;
@@ -49,9 +49,9 @@ const Top = styled.header`
   }
 
   #google_translate_element {
-  margin-left: 20rem;
+    margin-left: 20rem;
   }
-`
+`;
 
 const BottomBar = styled.div`
   display: flex;
@@ -81,45 +81,41 @@ const BottomBar = styled.div`
     padding-right: 1em;
   }
 
+
   .filtro {
-    display: flex;
-    gap: 1em;
-    margin-left: 2em;
-  }
-
-  .filtro select {
-    word-spacing: 0.5em;
-    padding: 0.3em 1em;
-    border-radius: 1.5em;
-    border: 1px solid #ffffff;
-    background-color: transparent;
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 0.9em;
-    appearance: none;
-    outline: none;
-    cursor: pointer;
     position: relative;
+    display: flex;
+    background: var(--background-select);
+    border-radius: 0.25rem;
+    gap: 0.5em;
+    padding: 1em;
   }
 
-  .seta{
-    background-color: red;
-    margin-left: 1em;
+  .filtro select{
+      width: 8em;
+      padding: 0.5em 0 0.5em 0.5em;
+      overflow: hidden;
+      background: var(--destaque);
+      color: white;
+      border: 1px solid white;
+      border-radius: 20px;
   }
 
-  .filtro select option {
-    color: #000000;
+  .placeholder{
+    color: #ffa500;
   }
 
 
-  .botaodireita{
+
+
+
+  .botaodireita {
     padding: 0.7em;
     border-radius: 15px;
     text-decoration: none;
     color: white;
-    border: 1px solid white ;
-
-}
+    border: 1px solid white;
+  }
 
   .botaodireita:hover {
     background-color: #d99a00;

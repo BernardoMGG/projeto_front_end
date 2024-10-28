@@ -1,20 +1,43 @@
 // Header.js
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { Top, BottomBar } from "./Style";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Header = ({ tecnologiasUsadas, ferramentasUsadas, cursos, periodos, unidades }) => {
   const [searchQuery, setSearchQuery] = useState('');
+  const [filtros, setFiltros] = useState({
+    tecnologia: '',
+    ferramenta: '',
+    curso: '',
+    periodo: '',
+    unidade: ''
+  });
   const navigate = useNavigate();
   const location = useLocation();
   let botaodireita = "";
   let linkbotaodireita = "";
 
+
+  useEffect(() => {
+    const query = new URLSearchParams({
+      search: searchQuery,
+      ...filtros,
+    });
+    navigate(`/projetos/page/1?${query.toString()}`);
+    console.log("Filtros aplicados:", filtros); // Para debug, mostra no console os filtros aplicados
+  }, [filtros, searchQuery, navigate]);
+
   const handleSearchSubmit = (e) => {
     e.preventDefault();
-    if (searchQuery) {
-      navigate(`/projetos/page/1?search=${encodeURIComponent(searchQuery)}`);
-    }
+    setFiltros((prevFiltros) => ({ ...prevFiltros, search: searchQuery }));
+  };
+
+  const handleFilterChange = (e) => {
+    const { name, value } = e.target;
+    setFiltros((prevFiltros) => ({
+      ...prevFiltros,
+      [name]: value
+    }));
   };
 
   const getPageTitle = () => {
@@ -67,36 +90,36 @@ const Header = ({ tecnologiasUsadas, ferramentasUsadas, cursos, periodos, unidad
           <span>{getPageTitle()}</span>
           {location.pathname.startsWith("/projetos") && (
             <div className="filtro">
-              <select>
-                <option value="" disabled selected hidden>Tecnologia ⮟</option>
+              <select name="tecnologia" onChange={handleFilterChange} value={filtros.tecnologia}>
+                <option value="" className="placeholder">Tecnologia</option>
                 {tecnologiasUsadas.map((tec, index) => (
                   <option key={index} value={tec}>{tec}</option>
                 ))}
               </select>
 
-              <select>
-                <option value="" disabled selected hidden>Ferramenta ⮟</option>
+              <select name="ferramenta" onChange={handleFilterChange} value={filtros.ferramenta}>
+                <option value="" className="placeholder">Ferramenta</option>
                 {ferramentasUsadas.map((ferr, index) => (
                   <option key={index} value={ferr}>{ferr}</option>
                 ))}
               </select>
 
-              <select>
-                <option value="" disabled selected hidden>Curso ⮟</option>
+              <select name="curso" onChange={handleFilterChange} value={filtros.curso}>
+                <option value="" className="placeholder">Curso</option>
                 {cursos.map((curso, index) => (
                   <option key={index} value={curso}>{curso}</option>
                 ))}
               </select>
 
-              <select>
-                <option value="" disabled selected hidden>Período ⮟</option>
+              <select name="periodo" onChange={handleFilterChange} value={filtros.periodo}>
+                <option value="" className="placeholder">Período</option>
                 {periodos.map((periodo, index) => (
                   <option key={index} value={periodo}>{periodo}</option>
                 ))}
               </select>
 
-              <select>
-                <option value="" disabled selected hidden>Unidade ⮟</option>
+              <select name="unidade" onChange={handleFilterChange} value={filtros.unidade}>
+                <option value="" className="placeholder">Unidade</option>
                 {unidades.map((unidade, index) => (
                   <option key={index} value={unidade}>{unidade}</option>
                 ))}

@@ -1,3 +1,4 @@
+// Projetos.js
 import { useEffect, useState } from "react";
 import { useParams, Link, useNavigate, useLocation } from "react-router-dom";
 import Base from "./Base";
@@ -14,7 +15,7 @@ const gerarSlug = (nome) => {
 };
 
 const Projetos = () => {
-  const { page = "1" } = useParams(); // Captura apenas a página
+  const { page = "1" } = useParams();
   const location = useLocation();
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -26,6 +27,11 @@ const Projetos = () => {
   // Extrai a query da URL
   const queryParams = new URLSearchParams(location.search);
   const searchQuery = queryParams.get("search") || "";
+  const tecnologia = queryParams.get("tecnologia") || "";
+  const ferramenta = queryParams.get("ferramenta") || "";
+  const curso = queryParams.get("curso") || "";
+  const periodo = queryParams.get("periodo") || "";
+  const unidade = queryParams.get("unidade") || "";
 
   useEffect(() => {
     setCurrentPage(Number(page));
@@ -46,9 +52,13 @@ const Projetos = () => {
     getDados();
   }, []);
 
-  const filteredData = searchQuery
-    ? data.filter(projeto => projeto.Nome.toLowerCase().includes(searchQuery.toLowerCase()))
-    : data;
+  const filteredData = data
+    .filter(projeto => !searchQuery || projeto.Nome.toLowerCase().includes(searchQuery.toLowerCase()))
+    .filter(projeto => !tecnologia || projeto.tecnologias.includes(tecnologia))
+    .filter(projeto => !ferramenta || projeto.ferramentas.includes(ferramenta))
+    .filter(projeto => !curso || projeto.Curso === curso)
+    .filter(projeto => !periodo || projeto.período === periodo)
+    .filter(projeto => !unidade || projeto.unidade === unidade);
 
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
@@ -72,16 +82,10 @@ const Projetos = () => {
         )}
         {currentItems.map((projeto, index) => (
           <Link to={`/projeto/${gerarSlug(projeto.Nome)}`} key={index} style={{ textDecoration: 'none' }}>
-            <AtletaCard
-              nome={projeto.Nome}
-              src={projeto.Fotodecapa}
-              detalhamento={projeto.detalhes}
-              integrantes={projeto.integrantes}
-            />
+            <AtletaCard nome={projeto.Nome} src={projeto.Fotodecapa} detalhamento={projeto.detalhes} integrantes={projeto.integrantes} />
           </Link>
         ))}
       </ListContainer>
-
       <Paginacao
         currentPage={currentPage}
         totalPages={totalPages}

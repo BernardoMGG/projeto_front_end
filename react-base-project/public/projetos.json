@@ -2,7 +2,7 @@
     {
       "Nome": "Sistema de Gestão Escolar",
       "detalhes": "Desenvolvimento de um sistema para gerenciar dados de escolas, incluindo matrículas.",
-      "integrantes": ["Bryan Amorim dos Santos", "Carlos Oliveira", "Lucas Mendes"],
+      "integrantes": ["Bryan Amorim dos Santos", "Carlos Oliveira", "Lucas Mendes", "Bryan Amorim dos Santos", "Carlos Oliveira", "Lucas Mendes"],
       "tecnologias": ["Java", "MySQL"],
       "ferramentas": ["Git"],
       "Curso": "Engenharia de Software",

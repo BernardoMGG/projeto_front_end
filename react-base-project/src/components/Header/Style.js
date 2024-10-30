@@ -38,7 +38,7 @@ const Top = styled.header`
     border: 0.5px solid transparent;
     border-radius: 1rem;
     height: 1.6rem;
-    width: 14rem;
+    width: 18rem;
     background-color: #e0e0e0;
     transition: border 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
   }

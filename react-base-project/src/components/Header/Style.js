@@ -51,6 +51,45 @@ const Top = styled.header`
   #google_translate_element {
     margin-left: 20rem;
   }
+
+  @media (max-width: 768px) {
+    padding: 0.5em 1em;
+
+    input[type="text"] {
+      margin-left: 2rem;
+      width: 12rem;
+    }
+
+    #google_translate_element {
+      margin-left: 10rem;
+    }
+  }
+
+  @media (max-width: 960px) {
+    flex-direction: column; /* Muda a direção para coluna */
+    align-items: center; /* Centraliza os itens */
+    padding: 1em;
+
+    a {
+      margin: 0.5em 0; /* Espaçamento entre os links */
+      min-width: auto; /* Remove o mínimo de largura */
+      flex: 1; /* Faz os links ocuparem o espaço */
+      text-align: center; /* Centraliza o texto dos links */
+    }
+
+    input[type="text"] {
+      margin-left: 0; /* Remove a margem à esquerda */
+      width: 100%; /* Faz o campo de busca ocupar toda a largura */
+      margin-bottom: 1em; /* Adiciona margem inferior */
+    }
+
+    #google_translate_element {
+      margin-left: 0; /* Remove a margem à esquerda */
+      margin-bottom: 1em; /* Adiciona margem inferior */
+      width: 100%; /* Faz o tradutor ocupar toda a largura */
+      text-align: center; /* Centraliza o tradutor */
+    }
+  }
 `;
 
 const BottomBar = styled.div`
@@ -71,17 +110,6 @@ const BottomBar = styled.div`
     font-size: 1.2em;
   }
 
-  .direita {
-    height: 100%;
-    background-color: #ffa500;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex: 0.3;
-    padding-right: 1em;
-  }
-
-
   .filtro {
     position: relative;
     display: flex;
@@ -91,23 +119,29 @@ const BottomBar = styled.div`
     padding: 1em;
   }
 
-  .filtro select{
-      width: 8em;
-      padding: 0.5em 0 0.5em 0.5em;
-      overflow: hidden;
-      background: var(--destaque);
-      color: white;
-      border: 1px solid white;
-      border-radius: 20px;
+  .filtro select {
+    width: 8em;
+    padding: 0.5em 0 0.5em 0.5em;
+    overflow: hidden;
+    background: var(--destaque);
+    color: white;
+    border: 1px solid white;
+    border-radius: 20px;
   }
 
-  .placeholder{
+  .placeholder {
     color: #ffa500;
   }
 
-
-
-
+  .direita {
+    height: 100%;
+    background-color: #ffa500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0.3;
+    padding-right: 1em;
+  }
 
   .botaodireita {
     padding: 0.7em;
@@ -119,6 +153,53 @@ const BottomBar = styled.div`
 
   .botaodireita:hover {
     background-color: #d99a00;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column; /* Altera a direção do flex */
+    align-items: stretch; /* Alinha todos os itens à largura total */
+    height: auto; /* Permite que a altura se ajuste ao conteúdo */
+
+    .esquerda {
+      padding: 1em; /* Ajusta o padding */
+      font-size: 1em; /* Ajusta o tamanho da fonte */
+      text-align: center; /* Centraliza o texto */
+      justify-content: center; /* Centraliza os filtros */
+      flex-direction: column; /* Coloca os filtros em coluna */
+    }
+
+    .filtro {
+      flex-direction: column; /* Organiza os filtros verticalmente */
+      padding: 0.5em; /* Ajusta o padding */
+      margin: 0 auto; /* Centraliza os filtros */
+      gap: 0.5em; /* Espaçamento entre os filtros */
+      width: 100%; /* Faz os filtros ocuparem toda a largura */
+    }
+
+    .filtro select {
+      width: 100%; /* Faz os selects ocuparem toda a largura */
+    }
+
+    .direita {
+      width: 100%; /* Faz a direita ocupar 100% */
+      padding: 1em; /* Ajusta o padding */
+      text-align: center; /* Centraliza o conteúdo da direita */
+    }
+
+    .botaodireita {
+      text-align: center; /* Centraliza o texto do botão */
+    }
+  }
+
+  @media (max-width: 960px) {
+    flex-direction: column; /* Altera a direção do flex */
+    align-items: stretch; /* Alinha todos os itens à largura total */
+    height: auto; /* Permite que a altura se ajuste ao conteúdo */
+    .direita {
+      width: 100%; /* Faz a direita ocupar 100% */
+      padding: 1em; /* Ajusta o padding */
+      text-align: center; /* Centraliza o conteúdo da direita */
+    }
   }
 `;
 

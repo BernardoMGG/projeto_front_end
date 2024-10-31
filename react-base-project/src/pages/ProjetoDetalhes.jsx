@@ -142,7 +142,7 @@ const ProjetoDetalhes = () => {
             position: relative;
             overflow: hidden;
             width: 100%;
-            height: 300px;
+            height: 500px;
             border-radius: 8px;
           }
 

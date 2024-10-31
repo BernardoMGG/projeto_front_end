@@ -2,79 +2,7 @@ import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { getProjetos } from "../services/getprojetos";
 import Base from "./Base";
-import styled from "styled-components";
 
-// Estilização
-const Container = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 2rem;
-  background-color: #f4f4f4;
-`;
-
-const ProjectBox = styled.div`
-  background-color: white;
-  padding: 2rem;
-  border-radius: 1rem;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  width: 90vw;
-  max-width: 1000px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
-
-const Title = styled.h1`
-  text-align: center;
-  color: #002555;
-  margin-bottom: 1.5rem;
-`;
-
-const InfoBox = styled.div`
-  margin-bottom: 1.5rem;
-  text-align: left;
-  width: 100%;
-`;
-
-const ImageBox = styled.div`
-  display: flex;
-  justify-content: center;
-  img {
-    max-width: 100%;
-    border-radius: 10px;
-  }
-`;
-
-const Participants = styled.p`
-  margin: 1rem 0;
-`;
-
-const TechnologyList = styled.ul`
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-`;
-
-const PhotoGallery = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-top: 2rem;
-`;
-
-const PhotoItem = styled.div`
-  width: 150px;
-  height: 150px;
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-  }
-`;
-
-// Função para gerar o slug do nome do projeto
 const gerarSlug = (nome) => {
   return nome
     .toLowerCase()
@@ -124,35 +52,158 @@ const ProjetoDetalhes = () => {
 
   return (
     <Base>
-      <Container>
-        <ProjectBox>
-          <Title>{projeto.Nome}</Title>
-          <ImageBox>
-            <img src={projeto.Fotodecapa} alt={`Capa do projeto ${projeto.Nome}`} />
-          </ImageBox>
-          <InfoBox>
-            <Participants>
-              <strong>Integrantes:</strong> {projeto.integrantes.join(", ")}
-            </Participants>
-            <p><strong>Detalhamento:</strong> {projeto.detalhes}</p>
-            <p><strong>Tecnologias Usadas:</strong></p>
-            <TechnologyList>
-              {projeto.tecnologias.map((tech, index) => (
-                <li key={index}>{tech}</li>
-              ))}
-            </TechnologyList>
-          </InfoBox>
+      <style>
+        {`
+          /* Estilos para o container principal do projeto */
+          .projeto {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 10px;
+            background-color: #f5f5f5;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+          }
+
+          /* Estilo para o título */
+          .projeto h1 {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+          }
+
+          /* Estilos para a foto e o detalhamento, lado a lado */
+          .foto-principal, .detalhes {
+            width: 48%;
+            height: 100%;
+            display: inline-block;
+            vertical-align: top;
+            box-sizing: border-box;
+          }
+
+          /* Estilos específicos para a foto-principal */
+          .foto-principal img {
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+            object-fit: cover;
+          }
+
+          /* Estilos específicos para o detalhamento */
+          .detalhes {
+            background-color: #ffffff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+            font-size: 16px;
+            overflow: hidden;
+          }
+
+
+          .informacoes {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+          }
+
+          .integrantes, .data-inicio, .data-fim, .tecnologias, .ferramentas {
+            background-color: #ffffff;
+            padding: 10px 15px;
+            border-radius: 8px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+          }
+
+          .integrantes p, .data-inicio p, .data-fim p, .tecnologias p, .ferramentas p {
+            font-weight: bold;
+            margin-bottom: 10px;
+          }
+
+          .informacoes-menores {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+          }
+
+          .informacoes-menores div {
+            flex: 1 1 45%;
+          }
+
+          .galeria {
+            margin-top: 20px;
+          }
+
+          .galeria h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+          }
+
+          .galeria .foto {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            margin-right: 10px;
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: #f0f0f0;
+          }
+
+          .galeria .foto img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        `}
+      </style>
+
+      <div className="projeto">
+        <h1>{projeto.Nome}</h1>
+        <div className="foto-principal">
+          <img src={projeto.Fotodecapa} alt={`Capa do projeto ${projeto.Nome}`} />
+        </div>
+        <div className="detalhes">
+          <p>Detalhamento: {projeto.detalhes}</p>
+        </div>
+
+        <div className="informacoes">
+          <div className="integrantes">
+            <p>Integrantes:</p> {projeto.integrantes.join(", ")}
+          </div>
+
+          <div className="informacoes-menores">
+            <div className="data-inicio">
+              <p>Data de Início: {projeto.datainicio}</p>
+            </div>
+            <div className="data-fim">
+              <p>Data de Conclusão: {projeto.datafim}</p>
+            </div>
+            <div className="tecnologias">
+              <p>Tecnologias Usadas:</p>
+              <ul>
+                {projeto.tecnologias.map((tech, index) => (
+                  <li key={index}>{tech}</li>
+                ))}
+              </ul>
+            </div>
+            <div className="ferramentas">
+              <p>Ferramentas Usadas:</p>
+              <ul>
+                {projeto.ferramentas.map((tools, index) => (
+                  <li key={index}>{tools}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className="galeria">
           <h3>Outras Fotos:</h3>
-          <PhotoGallery>
-            {projeto.fotos.map((foto, index) => (
-              <PhotoItem key={index}>
-                <img src={foto} alt={`Foto ${index + 1}`} />
-              </PhotoItem>
-            ))}
-            
-          </PhotoGallery>
-        </ProjectBox>
-      </Container>
+          {projeto.fotos.map((foto, index) => (
+            <div className="foto" key={index}>
+              <img src={foto} alt={`Foto ${index + 1}`} />
+            </div>
+          ))}
+        </div>
+      </div>
     </Base>
   );
 };

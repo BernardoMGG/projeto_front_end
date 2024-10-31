@@ -7,37 +7,37 @@ const membros = [
   {
     nome: "A preencher",
     curso: "A preencher",
-    unidade: "A preencher",
-    vinculo: "A preencher",
-    imagem: "/imagens/logo.png"
+    unidade: "Barra",
+    vinculo: "Estudante",
+    imagem: "/imagens/user.png"
   },
   {
     nome: "A preencher",
     curso: "A preencher",
-    unidade: "A preencher",
-    vinculo: "A preencher",
-    imagem: "url_da_imagem_2", // Insira a URL da imagem aqui
+    unidade: "Barra",
+    vinculo: "Estudante",
+    imagem: "/imagens/user.png", // Insira a URL da imagem aqui
   },
   {
     nome: "A preencher",
     curso: "A preencher",
-    unidade: "A preencher",
-    vinculo: "A preencher",
-    imagem: "url_da_imagem_3", // Insira a URL da imagem aqui
+    unidade: "Barra",
+    vinculo: "Estudante",
+    imagem: "/imagens/user.png", // Insira a URL da imagem aqui
   },
   {
     nome: "A preencher",
     curso: "A preencher",
-    unidade: "A preencher",
-    vinculo: "A preencher",
-    imagem: "url_da_imagem_4", // Insira a URL da imagem aqui
+    unidade: "Barra",
+    vinculo: "Estudante",
+    imagem: "/imagens/user.png", // Insira a URL da imagem aqui
   },
   {
     nome: "A preencher",
     curso: "A preencher",
-    unidade: "A preencher",
-    vinculo: "A preencher",
-    imagem: "url_da_imagem_5", // Insira a URL da imagem aqui
+    unidade: "Barra",
+    vinculo: "Estudante",
+    imagem: "/imagens/user.png", // Insira a URL da imagem aqui
   },
 ];
 

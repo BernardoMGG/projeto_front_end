@@ -15,6 +15,7 @@ const ProjetoDetalhes = () => {
   const [projeto, setProjeto] = useState(null);
   const [loading, setLoading] = useState(true);
   const [erro, setErro] = useState(null);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
     const fetchProjeto = async () => {
@@ -50,107 +51,145 @@ const ProjetoDetalhes = () => {
     return <span>Projeto não encontrado</span>;
   }
 
+  // Funções para navegação no carrossel
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % projeto.fotos.length);
+  };
+
+  const handlePrev = () => {
+    setCurrentIndex(
+      (prevIndex) => (prevIndex - 1 + projeto.fotos.length) % projeto.fotos.length
+    );
+  };
+
   return (
     <Base>
       <style>
         {`
-          /* Estilos para o container principal do projeto */
+          /* Estilo geral */
+          body {
+            font-family: Arial, sans-serif;
+            color: #333;
+          }
+
+          /* Container principal do projeto */
           .projeto {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 10px;
-            background-color: #f5f5f5;
-            border-radius: 8px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 12px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
           }
 
           /* Estilo para o título */
           .projeto h1 {
-            font-size: 24px;
+            font-size: 28px;
             font-weight: bold;
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
+            color: #333;
           }
 
-          /* Estilos para a foto e o detalhamento, lado a lado */
+          /* Foto principal e detalhamento lado a lado */
           .foto-principal, .detalhes {
             width: 48%;
-            height: 100%;
             display: inline-block;
             vertical-align: top;
             box-sizing: border-box;
           }
 
-          /* Estilos específicos para a foto-principal */
+          /* Foto principal */
           .foto-principal img {
             width: 100%;
-            height: 100%;
+            height: auto;
             border-radius: 8px;
-            object-fit: cover;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
           }
 
-          /* Estilos específicos para o detalhamento */
+          /* Detalhamento */
           .detalhes {
-            background-color: #ffffff;
             padding: 15px;
-            border-radius: 8px;
-            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
             font-size: 16px;
-            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
           }
 
-
+          /* Informações do projeto */
           .informacoes {
             display: flex;
             flex-direction: column;
             gap: 20px;
+            margin-top: 20px;
           }
 
           .integrantes, .data-inicio, .data-fim, .tecnologias, .ferramentas {
-            background-color: #ffffff;
-            padding: 10px 15px;
+            padding: 15px;
             border-radius: 8px;
-            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
           }
 
-          .integrantes p, .data-inicio p, .data-fim p, .tecnologias p, .ferramentas p {
-            font-weight: bold;
-            margin-bottom: 10px;
-          }
-
+          /* Informações menores */
           .informacoes-menores {
             display: flex;
             gap: 20px;
             flex-wrap: wrap;
           }
 
-          .informacoes-menores div {
-            flex: 1 1 45%;
-          }
-
+          /* Estilos específicos para o carrossel */
           .galeria {
-            margin-top: 20px;
-          }
-
-          .galeria h3 {
-            font-size: 20px;
-            margin-bottom: 10px;
-          }
-
-          .galeria .foto {
-            display: inline-block;
-            width: 100px;
-            height: 100px;
-            margin-right: 10px;
-            border-radius: 8px;
+            margin-top: 25px;
+            position: relative;
             overflow: hidden;
-            background-color: #f0f0f0;
+            width: 100%;
+            height: 300px;
+            border-radius: 8px;
           }
 
-          .galeria .foto img {
-            width: 100%;
+          .galeria .carrossel {
+            display: flex;
+            transition: transform 0.5s ease;
+          }
+
+          .galeria .carrossel img {
+            min-width: 100%;
             height: 100%;
             object-fit: cover;
+            border-radius: 8px;
+          }
+
+          /* Botões de navegação do carrossel */
+          .galeria .prev, .galeria .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 50%;
+          }
+
+          .galeria .prev {
+            left: 15px;
+          }
+
+          .galeria .next {
+            right: 15px;
+          }
+
+          /* Responsividade */
+          @media (max-width: 768px) {
+            .foto-principal, .detalhes {
+              width: 100%;
+              margin-bottom: 15px;
+            }
+
+            .informacoes-menores {
+              flex-direction: column;
+              gap: 15px;
+            }
           }
         `}
       </style>
@@ -166,18 +205,18 @@ const ProjetoDetalhes = () => {
 
         <div className="informacoes">
           <div className="integrantes">
-            <p>Integrantes:</p> {projeto.integrantes.join(", ")}
+            <p><strong>Integrantes:</strong> {projeto.integrantes.join(", ")}</p>
           </div>
 
           <div className="informacoes-menores">
             <div className="data-inicio">
-              <p>Data de Início: {projeto.datainicio}</p>
+              <p><strong>Data de Início:</strong> {projeto.datainicio}</p>
             </div>
             <div className="data-fim">
-              <p>Data de Conclusão: {projeto.datafim}</p>
+              <p><strong>Data de Conclusão:</strong> {projeto.datafim}</p>
             </div>
             <div className="tecnologias">
-              <p>Tecnologias Usadas:</p>
+              <p><strong>Tecnologias Usadas:</strong></p>
               <ul>
                 {projeto.tecnologias.map((tech, index) => (
                   <li key={index}>{tech}</li>
@@ -185,7 +224,7 @@ const ProjetoDetalhes = () => {
               </ul>
             </div>
             <div className="ferramentas">
-              <p>Ferramentas Usadas:</p>
+              <p><strong>Ferramentas Usadas:</strong></p>
               <ul>
                 {projeto.ferramentas.map((tools, index) => (
                   <li key={index}>{tools}</li>
@@ -197,11 +236,13 @@ const ProjetoDetalhes = () => {
 
         <div className="galeria">
           <h3>Outras Fotos:</h3>
-          {projeto.fotos.map((foto, index) => (
-            <div className="foto" key={index}>
-              <img src={foto} alt={`Foto ${index + 1}`} />
-            </div>
-          ))}
+          <div className="carrossel" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
+            {projeto.fotos.map((foto, index) => (
+              <img src={foto} alt={`Foto ${index + 1}`} key={index} />
+            ))}
+          </div>
+          <button className="prev" onClick={handlePrev}>{"<"}</button>
+          <button className="next" onClick={handleNext}>{">"}</button>
         </div>
       </div>
     </Base>

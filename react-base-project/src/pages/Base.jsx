@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import Header from "../components/Header/Header";
-import { getProjetos } from "../services/getprojetos"; // Importar a função para buscar os dados
+import { getProjetos } from "../services/getprojetos";
 
-const Base = (props) => {
+const Base = ({ currentPage, children }) => {
   const [dadosProjetos, setDadosProjetos] = useState([]);
+
 
   useEffect(() => {
     const fetchProjetos = async () => {
@@ -13,6 +14,8 @@ const Base = (props) => {
 
     fetchProjetos();
   }, []);
+
+
 
   // Extraindo informações
   const tecnologiasUsadas = Array.from(new Set(dadosProjetos.flatMap(projeto => projeto.tecnologias)));
@@ -24,6 +27,7 @@ const Base = (props) => {
   return (
     <>
       <Header
+        currentPage={currentPage} // Passa currentPage para o Header
         tecnologiasUsadas={tecnologiasUsadas}
         ferramentasUsadas={ferramentasUsadas}
         cursos={cursos}
@@ -31,7 +35,7 @@ const Base = (props) => {
         unidades={unidades}
       />
       <div className="container">
-        {props.children}
+        {children}
       </div>
     </>
   );

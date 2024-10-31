@@ -1,4 +1,3 @@
-// Projetos.js
 import { useEffect, useState } from "react";
 import { useParams, Link, useNavigate, useLocation } from "react-router-dom";
 import Base from "./Base";
@@ -20,57 +19,56 @@ const Projetos = () => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [erro, setErro] = useState(null);
-  const [currentPage, setCurrentPage] = useState(Number(page));
   const itemsPerPage = 12;
   const navigate = useNavigate();
 
-  // Extrai a query da URL
-  const queryParams = new URLSearchParams(location.search);
-  const searchQuery = queryParams.get("search") || "";
-  const tecnologia = queryParams.get("tecnologia") || "";
-  const ferramenta = queryParams.get("ferramenta") || "";
-  const curso = queryParams.get("curso") || "";
-  const periodo = queryParams.get("periodo") || "";
-  const unidade = queryParams.get("unidade") || "";
-
-  useEffect(() => {
-    setCurrentPage(Number(page));
-  }, [page]);
+  const currentPage = Number(page);
 
   useEffect(() => {
     const getDados = async () => {
       const dados = await getProjetos();
-
       if (dados.code === 400) {
         setErro(dados);
       } else {
         setData(dados);
       }
-
       setLoading(false);
     };
     getDados();
   }, []);
 
-  const filteredData = data
-    .filter(projeto => !searchQuery || projeto.Nome.toLowerCase().includes(searchQuery.toLowerCase()))
-    .filter(projeto => !tecnologia || projeto.tecnologias.includes(tecnologia))
-    .filter(projeto => !ferramenta || projeto.ferramentas.includes(ferramenta))
-    .filter(projeto => !curso || projeto.Curso === curso)
-    .filter(projeto => !periodo || projeto.período === periodo)
-    .filter(projeto => !unidade || projeto.unidade === unidade);
+  // Filtragem dos dados
+  const filteredData = data.filter(projeto => {
+    const queryParams = new URLSearchParams(location.search);
+    const searchQuery = queryParams.get("search") || "";
+    const tecnologia = queryParams.get("tecnologia") || "";
+    const ferramenta = queryParams.get("ferramenta") || "";
+    const curso = queryParams.get("curso") || "";
+    const periodo = queryParams.get("periodo") || "";
+    const unidade = queryParams.get("unidade") || "";
 
+    return (
+      (!searchQuery || projeto.Nome.toLowerCase().includes(searchQuery.toLowerCase())) &&
+      (!tecnologia || projeto.tecnologias.includes(tecnologia)) &&
+      (!ferramenta || projeto.ferramentas.includes(ferramenta)) &&
+      (!curso || projeto.Curso === curso) &&
+      (!periodo || projeto.período === periodo) &&
+      (!unidade || projeto.unidade === unidade)
+    );
+  });
+
+  // Paginação dos dados filtrados
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const currentItems = filteredData.slice(indexOfFirstItem, indexOfLastItem);
   const totalPages = Math.ceil(filteredData.length / itemsPerPage);
 
   const handlePageChange = (pageNumber) => {
-    navigate(`/projetos/page/${pageNumber}?search=${encodeURIComponent(searchQuery)}`); // Mantém a query na URL
+    navigate(`/projetos/page/${pageNumber}?${location.search}`); // Mantém os filtros na URL
   };
 
   return (
-    <Base>
+    <Base currentPage={currentPage}>
       <ListContainer>
         {loading && <span>Carregando...</span>}
         {erro && (

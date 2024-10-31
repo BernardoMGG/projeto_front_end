@@ -3,7 +3,7 @@ import { Link, useNavigate, useLocation } from "react-router-dom";
 import { Top, BottomBar } from "./Style";
 import { useState, useEffect } from "react";
 
-const Header = ({ tecnologiasUsadas, ferramentasUsadas, cursos, periodos, unidades }) => {
+const Header = ({ currentPage, tecnologiasUsadas, ferramentasUsadas, cursos, periodos, unidades }) => {
   const [searchQuery, setSearchQuery] = useState('');
   const [filtros, setFiltros] = useState({
     tecnologia: '',
@@ -17,15 +17,18 @@ const Header = ({ tecnologiasUsadas, ferramentasUsadas, cursos, periodos, unidad
   let botaodireita = "";
   let linkbotaodireita = "";
 
-
   useEffect(() => {
     const query = new URLSearchParams({
       search: searchQuery,
       ...filtros,
     });
-    navigate(`/projetos/page/1?${query.toString()}`);
-    console.log("Filtros aplicados:", filtros); // Para debug, mostra no console os filtros aplicados
-  }, [filtros, searchQuery, navigate]);
+
+    // Verifica se a URL atual começa com "/projetos"
+    if (location.pathname.startsWith("/projetos")) {
+      navigate(`/projetos/page/${Number(currentPage)}?${query.toString()}`);
+      console.log("Filtros aplicados:", filtros);
+    }
+  }, [filtros, searchQuery, navigate, location.pathname, currentPage]); // Adicionado currentPage como dependência
 
   const handleSearchSubmit = (e) => {
     e.preventDefault();

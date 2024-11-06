@@ -23,7 +23,7 @@ const Card = styled.article`
   .nome {
     font-size: 1rem;
     font-weight: bold;
-    color: var(--destaque);
+    color: #161C2D;
     margin-bottom: 0.3em;
     margin-right: auto;
     text-align: center;
@@ -54,7 +54,7 @@ const Card = styled.article`
   }
 
   .detalhes {
-    background-color: var(--detalhe);
+    background-color: #161C2D;
     color: var(--secundaria);
     padding: 0.5em;
     display: flex;
@@ -80,7 +80,7 @@ const Card = styled.article`
     flex-direction: column;
     justify-content: space-between;
     background-color: var(--detalhe);
-    color: var(--secundaria);
+    color: #161C2D;
     padding: 0.5em;
     height: 7rem;
     border-bottom-right-radius: 5px;

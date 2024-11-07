@@ -54,10 +54,10 @@ const DetalhesCard = ({
             {/* Dados principais lado a lado */}
             <div className="data-inicio-conclusao">
               <div className="info-bloco">
-                <p><strong>Data de Início:</strong> {dataInicio}</p>
+                <p>Data de Início: <br /> {dataInicio}</p>
               </div>
               <div className="info-bloco">
-                <p><strong>Data de Conclusão:</strong> {dataFim}</p>
+                <p>Data de Conclusão: <br /> {dataFim}</p>
               </div>
             </div>
 
@@ -80,9 +80,9 @@ const DetalhesCard = ({
                 </ul>
               </div>
             </div>
-
-            {/* Carrossel de Fotos */}
-            <div className="galeria">
+          </div>
+          {/* Carrossel de Fotos */}
+          <div className="galeria">
               <h3>Outras Fotos</h3>
               <div className="carrossel" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
                 {fotos.map((foto, index) => (
@@ -92,7 +92,6 @@ const DetalhesCard = ({
               <button className="prev" onClick={handlePrev}>{"<"}</button>
               <button className="next" onClick={handleNext}>{">"}</button>
             </div>
-          </div>
         </div>
       </div>
     </Card>

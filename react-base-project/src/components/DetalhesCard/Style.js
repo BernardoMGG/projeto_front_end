@@ -99,7 +99,6 @@ const Card = styled.article`
   }
 
   .informacoes {
-    flex: 2;
   }
 
   .data-inicio-conclusao {

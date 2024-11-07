@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import Base from "./Base";
 
-// Dados para os membros da equipe
 const membros = [
   {
     nome: "João Pedro Abdu",
@@ -41,85 +40,128 @@ const membros = [
   },
 ];
 
-// Estilo do Container
 const Container = styled.div`
-  padding: 2rem;
+  padding: 2rem 0;
   background-color: #f8f8f8;
   min-height: 100vh;
+  position: relative;
 `;
 
-// Estilo do Título
-const Titulo = styled.h1`
-  text-align: center;
-  margin-bottom: 2rem;
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #2a5dab;
-  text-transform: uppercase;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+const VerticalLine = styled.div`
+  position: absolute;
+  top: 100px; /* Ajuste para posicionar a linha abaixo do título */
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background-color: #ccc;
+  transform: translateX(-50%);
+  margin-top: 1rem;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
-// Estilo para a seção da equipe
+const BannerContainer = styled.div`
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  max-height: 400px;
+`;
+
+const BannerImage = styled.img`
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: cover;
+  filter: brightness(0.7);
+`;
+
 const TeamSection = styled.div`
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 2rem;
-  margin-top: 2rem;
+  flex-direction: column;
+  gap: 4rem;
+
+  @media (max-width: 768px) {
+    align-items: center;
+  }
 `;
 
-// Estilo do Cartão
 const MemberCard = styled.div`
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  padding: 1.5rem;
+  width: 45%;
+  justify-content: ${(props) => (props.alinhamento === "esquerda" ? "flex-start" : "flex-end")};
+  margin-left: ${(props) => (props.alinhamento === "direita" ? "72rem" : "0")};
+  margin-right: ${(props) => (props.alinhamento === "esquerda" ? "auto" : "0")};
+  padding-left: ${(props) => (props.alinhamento === "esquerda" ? "2rem" : "0")};
+  padding-right: ${(props) => (props.alinhamento === "direita" ? "2rem" : "0")};
+  flex-direction: ${(props) => (props.alinhamento === "esquerda" ? "row" : "row-reverse")};
+
+  @media (max-width: 768px) {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+`;
+
+const MemberImage = styled.img`
   width: 200px;
-  height: 300px;
-  padding: 1rem;
-  text-align: center;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: ${(props) => (props.alinhamento === "esquerda" ? "1.5rem" : "0")};
+  margin-left: ${(props) => (props.alinhamento === "direita" ? "1.5rem" : "0")};
+
+  @media (max-width: 768px) {
+    margin: 0;
+  }
+`;
+
+const MemberDetails = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  text-align: center;
+
+  @media (max-width: 768px) {
+    align-items: center;
+  }
 `;
 
-// Estilo da Imagem do Membro
-const MemberImage = styled.img`
-  width: 120px; /* Aumenta a largura */
-  height: 120px; /* Aumenta a altura */
-  object-fit: cover; /* Mantém a proporção sem esticar */
-  border-radius: 50%; /* Deixa a imagem circular */
-  margin-bottom: 1rem;
-`;
-
-// Estilo do Nome
 const Nome = styled.h3`
-  font-size: 1.1rem;
-  margin: 0.5rem 0;
+  font-size: 1.6rem;
+  margin: 0;
   color: #2a5dab;
 `;
 
-// Estilo da Informação
 const Info = styled.p`
-  margin: 0;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   color: #555;
+  margin: 0.4rem 0;
 `;
 
 const SobreNos = () => (
   <Base>
+    <BannerContainer>
+      <BannerImage src="/imagens/image2.png" alt="Banner Sobre Nós" />
+    </BannerContainer>
     <Container>
-      <Titulo>Sobre Nós</Titulo>
-      <div style={{ position: "relative", width: "100vw", left: "50%", transform: "translateX(-50%)" }}><img src="/imagens/image2.png" alt="Banner Sobre Nós" style={{ width: "100vw", height: "auto", maxHeight: "400px", objectFit: "cover", margin: "0", padding: "0" }} /></div>
+      <VerticalLine />
       <TeamSection>
         {membros.map((membro, index) => (
-          <MemberCard key={index}>
-            <MemberImage src={membro.imagem} alt={membro.nome} />
-            <Nome>{membro.nome}</Nome>
-            <Info>Curso: {membro.curso}</Info>
-            <Info>Unidade: {membro.unidade}</Info>
-            <Info>Vínculo: {membro.vinculo}</Info>
+          <MemberCard key={index} alinhamento={index % 2 === 0 ? "esquerda" : "direita"}>
+            <MemberImage src={membro.imagem} alt={membro.nome} alinhamento={index % 2 === 0 ? "esquerda" : "direita"} />
+            <MemberDetails>
+              <Nome>{membro.nome}</Nome>
+              <Info>Curso: {membro.curso}</Info>
+              <Info>Unidade: {membro.unidade}</Info>
+              <Info>Vínculo: {membro.vinculo}</Info>
+            </MemberDetails>
           </MemberCard>
         ))}
       </TeamSection>

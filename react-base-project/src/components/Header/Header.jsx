@@ -1,4 +1,3 @@
-// Header.js
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { Top, BottomBar } from "./Style";
 import { useState, useEffect } from "react";
@@ -23,12 +22,11 @@ const Header = ({ currentPage, tecnologiasUsadas, ferramentasUsadas, cursos, per
       ...filtros,
     });
 
-    // Verifica se a URL atual começa com "/projetos"
     if (location.pathname.startsWith("/projetos")) {
       navigate(`/projetos/page/${Number(currentPage)}?${query.toString()}`);
       console.log("Filtros aplicados:", filtros);
     }
-  }, [filtros, searchQuery, navigate, location.pathname, currentPage]); // Adicionado currentPage como dependência
+  }, [filtros, searchQuery, navigate, location.pathname, currentPage]);
 
   const handleSearchSubmit = (e) => {
     e.preventDefault();
@@ -89,51 +87,64 @@ const Header = ({ currentPage, tecnologiasUsadas, ferramentasUsadas, cursos, per
         )}
       </Top>
 
-      <BottomBar>
-        <div className="esquerda">
-          <span>{getPageTitle()}</span>
-          {!(location.pathname.startsWith("/sobre-nos")|| location.pathname.startsWith("/projeto/")) && (
-            <div className="filtro">
-              <select name="tecnologia" onChange={handleFilterChange} value={filtros.tecnologia}>
-                <option value="" className="placeholder">Tecnologia</option>
-                {tecnologiasUsadas.map((tec, index) => (
-                  <option key={index} value={tec}>{tec}</option>
-                ))}
-              </select>
+      {/* Estilo inline específico para a página "Sobre Nós" */}
+      <BottomBar
+        style={{
+          justifyContent: "center",
+          backgroundColor: location.pathname === "/sobre-nos" ? "#002555" : "",
+          color: location.pathname === "/sobre-nos" ? "white" : "",
+          marginBottom: 0
+          }}>
+        {location.pathname === "/sobre-nos" ? (
+          <h1 style={{ color: "white" }}>Sobre Nós</h1>
+        ) : (
+          <div className="esquerda">
+            <span>{getPageTitle()}</span>
+            {!(location.pathname.startsWith("/sobre-nos") || location.pathname.startsWith("/projeto/")) && (
+              <div className="filtro">
+                <select name="tecnologia" onChange={handleFilterChange} value={filtros.tecnologia}>
+                  <option value="" className="placeholder">Tecnologia</option>
+                  {tecnologiasUsadas.map((tec, index) => (
+                    <option key={index} value={tec}>{tec}</option>
+                  ))}
+                </select>
 
-              <select name="ferramenta" onChange={handleFilterChange} value={filtros.ferramenta}>
-                <option value="" className="placeholder">Ferramenta</option>
-                {ferramentasUsadas.map((ferr, index) => (
-                  <option key={index} value={ferr}>{ferr}</option>
-                ))}
-              </select>
+                <select name="ferramenta" onChange={handleFilterChange} value={filtros.ferramenta}>
+                  <option value="" className="placeholder">Ferramenta</option>
+                  {ferramentasUsadas.map((ferr, index) => (
+                    <option key={index} value={ferr}>{ferr}</option>
+                  ))}
+                </select>
 
-              <select name="curso" onChange={handleFilterChange} value={filtros.curso}>
-                <option value="" className="placeholder">Curso</option>
-                {cursos.map((curso, index) => (
-                  <option key={index} value={curso}>{curso}</option>
-                ))}
-              </select>
+                <select name="curso" onChange={handleFilterChange} value={filtros.curso}>
+                  <option value="" className="placeholder">Curso</option>
+                  {cursos.map((curso, index) => (
+                    <option key={index} value={curso}>{curso}</option>
+                  ))}
+                </select>
 
-              <select name="periodo" onChange={handleFilterChange} value={filtros.periodo}>
-                <option value="" className="placeholder">Período</option>
-                {periodos.map((periodo, index) => (
-                  <option key={index} value={periodo}>{periodo}</option>
-                ))}
-              </select>
+                <select name="periodo" onChange={handleFilterChange} value={filtros.periodo}>
+                  <option value="" className="placeholder">Período</option>
+                  {periodos.map((periodo, index) => (
+                    <option key={index} value={periodo}>{periodo}</option>
+                  ))}
+                </select>
 
-              <select name="unidade" onChange={handleFilterChange} value={filtros.unidade}>
-                <option value="" className="placeholder">Unidade</option>
-                {unidades.map((unidade, index) => (
-                  <option key={index} value={unidade}>{unidade}</option>
-                ))}
-              </select>
-            </div>
-          )}
-        </div>
-        <div className="direita">
-          {botaodireita && <Link to={`/${linkbotaodireita}`} className="botaodireita">{botaodireita}</Link>}
-        </div>
+                <select name="unidade" onChange={handleFilterChange} value={filtros.unidade}>
+                  <option value="" className="placeholder">Unidade</option>
+                  {unidades.map((unidade, index) => (
+                    <option key={index} value={unidade}>{unidade}</option>
+                  ))}
+                </select>
+              </div>
+            )}
+          </div>
+        )}
+        {location.pathname !== "/sobre-nos" && (
+          <div className="direita">
+            {botaodireita && <Link to={`/${linkbotaodireita}`} className="botaodireita">{botaodireita}</Link>}
+          </div>
+        )}
       </BottomBar>
     </>
   );

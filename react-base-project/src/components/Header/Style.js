@@ -59,10 +59,6 @@ const Top = styled.header`
       margin-left: 2rem;
       width: 12rem;
     }
-
-    #google_translate_element {
-      margin-left: 10rem;
-    }
   }
 
   @media (max-width: 960px) {
@@ -81,13 +77,6 @@ const Top = styled.header`
       margin-left: 0; /* Remove a margem à esquerda */
       width: 100%; /* Faz o campo de busca ocupar toda a largura */
       margin-bottom: 1em; /* Adiciona margem inferior */
-    }
-
-    #google_translate_element {
-      margin-left: 0; /* Remove a margem à esquerda */
-      margin-bottom: 1em; /* Adiciona margem inferior */
-      width: 100%; /* Faz o tradutor ocupar toda a largura */
-      text-align: center; /* Centraliza o tradutor */
     }
   }
 `;

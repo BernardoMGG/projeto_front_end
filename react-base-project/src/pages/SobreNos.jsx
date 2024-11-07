@@ -87,6 +87,7 @@ const SobreNos = () => (
   <Base>
     <Container>
       <h1 style={{ textAlign: "center", marginBottom: "2rem" }}>Sobre Nós</h1>
+      <img src="/imagens/image3.png" alt="Banner Sobre Nós" style={{ width: "100%", height: "auto", maxHeight: "400px",objectFit: "cover",marginBottom: "20px" }} />
       <TeamSection>
         {membros.map((membro, index) => (
           <MemberCard key={index}>

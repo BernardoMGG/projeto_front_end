@@ -36,7 +36,7 @@ const Header = ({ currentPage, tecnologiasUsadas, ferramentasUsadas, cursos, per
   };
 
   const handleFilterChange = (e) => {
-    navigate(`/projetos/page/${Number(currentPage)}`);
+    navigate(`/projetos/page/1`);
     const { name, value } = e.target;
     setFiltros((prevFiltros) => ({
       ...prevFiltros,

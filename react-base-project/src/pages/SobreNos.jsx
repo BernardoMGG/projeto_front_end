@@ -5,36 +5,36 @@ import Base from "./Base";
 // Dados para os membros da equipe
 const membros = [
   {
-    nome: "A preencher",
-    curso: "A preencher",
+    nome: "João Pedro Abdu",
+    curso: "Análise e Desenvolvimento de Sistemas",
     unidade: "Barra",
     vinculo: "Estudante",
     imagem: "/imagens/user.png"
   },
   {
-    nome: "A preencher",
-    curso: "A preencher",
+    nome: "Bernardo Gonçalves",
+    curso: "Engenharia de Software",
     unidade: "Barra",
     vinculo: "Estudante",
     imagem: "/imagens/user.png", // Insira a URL da imagem aqui
   },
   {
-    nome: "A preencher",
-    curso: "A preencher",
+    nome: "Bryan Amorim",
+    curso: "Ciência de Dados",
     unidade: "Barra",
     vinculo: "Estudante",
     imagem: "/imagens/user.png", // Insira a URL da imagem aqui
   },
   {
-    nome: "A preencher",
-    curso: "A preencher",
+    nome: "Lucca Barcelos",
+    curso: "Engenharia de Software",
     unidade: "Barra",
     vinculo: "Estudante",
     imagem: "/imagens/user.png", // Insira a URL da imagem aqui
   },
   {
-    nome: "A preencher",
-    curso: "A preencher",
+    nome: "Gustavo Salvador",
+    curso: "Ciência de Dados",
     unidade: "Barra",
     vinculo: "Estudante",
     imagem: "/imagens/user.png", // Insira a URL da imagem aqui

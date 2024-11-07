@@ -79,8 +79,8 @@ const Card = styled.article`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: var(--detalhe);
-    color: #161C2D;
+    background-color: #161C2D;
+    color: #FFFFFF;
     padding: 0.5em;
     height: 7rem;
     border-bottom-right-radius: 5px;

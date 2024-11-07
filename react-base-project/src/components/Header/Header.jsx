@@ -36,6 +36,7 @@ const Header = ({ currentPage, tecnologiasUsadas, ferramentasUsadas, cursos, per
   };
 
   const handleFilterChange = (e) => {
+    navigate(`/projetos/page/${Number(currentPage)}`);
     const { name, value } = e.target;
     setFiltros((prevFiltros) => ({
       ...prevFiltros,
@@ -91,7 +92,7 @@ const Header = ({ currentPage, tecnologiasUsadas, ferramentasUsadas, cursos, per
       <BottomBar>
         <div className="esquerda">
           <span>{getPageTitle()}</span>
-          {location.pathname.startsWith("/projetos") && (
+          {!(location.pathname.startsWith("/sobre-nos")|| location.pathname.startsWith("/projeto/")) && (
             <div className="filtro">
               <select name="tecnologia" onChange={handleFilterChange} value={filtros.tecnologia}>
                 <option value="" className="placeholder">Tecnologia</option>

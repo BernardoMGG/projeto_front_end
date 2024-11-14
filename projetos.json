@@ -11,7 +11,7 @@
     "datainicio": "2023-01-10",
     "datafim": "2023-06-15",
     "Fotodecapa": "imagens/image.png",
-    "fotos": ["/imagens/old-computer-4.jpg", "/imagens/old-computer-4.jpg", "/imagens/old-computer-4.jpg", "/imagens/old-computer-4.jpg"]
+    "fotos": ["imagens/old-computer-4.jpg", "imagens/old-computer-4.jpg", "imagens/old-computer-4.jpg", "imagens/old-computer-4.jpg"]
   },
   {
     "Nome": "Aplicativo de Entregas",
@@ -24,9 +24,8 @@
     "período": "quarto",
     "data-inicio": "2023-02-01",
     "data-fim": "2023-05-20",
-    "Fotodecapa": "/imagens/old-computer-2.jpg",
-    "fotos": ["/imagens/image.png", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-  },
+    "Fotodecapa": "imagens/old-computer-2.jpg",
+    "fotos": ["imagens/old-computer-4.jpg", "imagens/old-computer-4.jpg", "imagens/old-computer-4.jpg", "imagens/old-computer-4.jpg"]  },
   {
     "Nome": "E-commerce de Moda",
     "detalhes": "Plataforma de e-commerce para venda de roupas e acessórios.",
@@ -38,9 +37,8 @@
     "período": "sétimo",
     "datainicio": "2023-03-15",
     "datafim": "2023-08-30",
-    "Fotodecapa": "/imagens/old-computer-3.jpg",
-    "fotos": ["/imagens/image.png", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-  },
+    "Fotodecapa": "imagens/old-computer-3.jpg",
+    "fotos": ["imagens/old-computer-4.jpg", "imagens/old-computer-4.jpg", "imagens/old-computer-4.jpg", "imagens/old-computer-4.jpg"]  },
   {
     "Nome": "Plataforma de Ensino",
     "detalhes": "Desenvolvimento de uma plataforma EAD com aulas ao vivo.",
@@ -52,9 +50,8 @@
     "período": "quarto",
     "datainicio": "2023-04-10",
     "datafim": "2023-09-10",
-    "Fotodecapa": "/imagens/old-computer-4.jpg",
-    "fotos": ["/imagens/image.png", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-  },
+    "Fotodecapa": "imagens/old-computer-4.jpg",
+    "fotos": ["imagens/old-computer-4.jpg", "imagens/old-computer-4.jpg", "imagens/old-computer-4.jpg", "imagens/old-computer-4.jpg"]  },
   {
     "Nome": "App de Controle Financeiro",
     "detalhes": "Aplicativo para gerenciar as finanças pessoais.",
@@ -66,9 +63,8 @@
     "período": "sexto",
     "datainicio": "2023-05-20",
     "datafim": "2023-10-01",
-    "Fotodecapa": "/imagens/image.png",
-    "fotos": ["/imagens/image.png", "/imagens/old-computer-2.jpg", "/imagens/old-computer-3.jpg", "/imagens/old-computer-4.jpg"]
-  },
+    "Fotodecapa": "imagens/image.png",
+    "fotos": ["imagens/old-computer-4.jpg", "imagens/old-computer-4.jpg", "imagens/old-computer-4.jpg", "imagens/old-computer-4.jpg"]  },
   {
     "Nome": "Sistema de Gestão de Tarefas",
     "detalhes": "Sistema para organizar e gerenciar tarefas, com suporte para colaboração em equipe.",

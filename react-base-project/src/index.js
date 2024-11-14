@@ -1,6 +1,6 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import { HashRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Navigate, Route, Routes } from "react-router-dom";
 import Login from "./pages/Login";
 import Logout from "./pages/Logout";
 import { auth } from "./config/Firebase";
@@ -24,7 +24,7 @@ root.render(
   <React.StrictMode>
     <HashRouter>
       <Routes>
-        <Route path="/" element={<Projetos />} />
+        <Route path="/" element={<Navigate to="/projetos/page/1" />} />
         <Route path="/projetos/page/:page" element={<Projetos />} /> {/* Apenas uma rota para projetos */}
         <Route path="/projeto/:slug" element={<ProjetoDetalhes />} />
         <Route path="/login" element={<Login />} />

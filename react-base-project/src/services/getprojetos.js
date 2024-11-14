@@ -1,6 +1,6 @@
 export const getProjetos = async () => {
     try {
-      const response = await fetch('/projetos.json'); // Caminho relativo à pasta public
+      const response = await fetch('projetos.json'); // Caminho relativo à pasta public
       if (!response.ok) {
         throw new Error('Erro ao carregar o arquivo JSON');
       }

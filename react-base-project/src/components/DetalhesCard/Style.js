@@ -1,14 +1,12 @@
 import styled from "styled-components";
 
 const Card = styled.article`
-  margin: 4em;
+  margin: 0em;
   padding: 2em;
   background-color: #ffffff;
   border-radius: 16px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-
-
 
   .header {
     text-align: center;
@@ -17,7 +15,7 @@ const Card = styled.article`
 
   .header h1 {
     font-size: 3rem;
-    color: #2e3b4e; /* Cor consistente com o resto do site */
+    color: #2e3b4e;
     font-weight: bold;
     margin-bottom: 1.2em;
   }
@@ -37,7 +35,9 @@ const Card = styled.article`
 
   .descricao {
     flex: 1;
-    padding-right: 2em;
+    padding-right: 1em;
+    max-height: 300px;
+    overflow-y: auto;
   }
 
   .descricao p {
@@ -49,18 +49,31 @@ const Card = styled.article`
 
   .foto-principal {
     flex: 1;
+    margin-left: 1em;
   }
 
   .foto-principal img {
     width: 100%;
-    border-radius: 12px;
+    height: 100%;
+    max-height: 300px;
+    object-fit: cover;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
   }
 
+  .integrantes-informacoes-galeria {
+    display: flex;
+    width: 100%; /* Garante que a galeria ocupe a largura total disponível */
+    justify-content: space-between; /* Distribui o espaço igualmente entre os itens */
+  }
+
+  .esquerda {
+    flex-basis: 30%;
+  }
+
   .integrantes {
-    width: 300px;
+    flex-basis: 30%;
+    min-width: 250px;
     margin-right: 3em;
-    margin-bottom: 2em;
   }
 
   .integrantes h3 {
@@ -86,7 +99,7 @@ const Card = styled.article`
   .integrante .avatar {
     width: 60px;
     height: 60px;
-    background-image: url("/imagens/perfil.png");
+    background-image: url("imagens/perfil.png");
     background-size: cover;
     background-position: center;
     border-radius: 50%;
@@ -98,24 +111,32 @@ const Card = styled.article`
     color: #2e3b4e;
   }
 
+  .direita {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 30% - 3em); /* Faz a largura da div direita ocupar o espaço restante */
+  }
+
   .informacoes {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0em;
   }
 
   .data-inicio-conclusao {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 2em;
+    margin-bottom: 0em;
   }
 
   .info-bloco {
     font-size: 1.1rem;
     color: #444;
-    margin-bottom: 1.5em;
+    margin-bottom: 0em;
     width: 48%;
   }
 
   .info-bloco p {
-    font-weight: bold;
     margin-bottom: 0.5em;
   }
 
@@ -135,88 +156,24 @@ const Card = styled.article`
     margin-bottom: 2em;
   }
 
-  /* Carrossel de fotos */
   .galeria {
-    position: relative;
     overflow: hidden;
-    margin-top: 3em;
-    border-radius: 12px; /* Borda mais suave */
-    background-color: transparent; /* Removendo fundo sólido */
-    padding: 0 20px; /* Pequeno espaçamento lateral para manter o carrossel leve */
-  }
-
-  .galeria h3 {
-    font-size: 1.6rem;
-    font-weight: bold;
-    color: #2e3b4e; /* Cor do título consistente com o site */
-    text-align: center;
-    margin-bottom: 1.5em;
-  }
-
-  .carrossel {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-  }
-
-  .carrossel img {
     width: 100%;
-    height: 350px;
-    object-fit: cover;
-    border-radius: 8px; /* Bordas mais arredondadas */
-  }
-
-  /* Botões de navegação (prev e next) */
-  .prev, .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.3); /* Cor mais suave para os botões */
-    color: #fff;
-    padding: 15px;
-    border: none;
-    cursor: pointer;
-    border-radius: 50%;
-    z-index: 10;
-    transition: background-color 0.3s ease;
-  }
-
-  .prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.5); /* Efeito de hover mais suave */
-  }
-
-  .prev:focus, .next:focus {
-    outline: none; /* Retirando o contorno laranja */
-  }
-
-  .prev {
-    left: 15px;
-  }
-
-  .next {
-    right: 15px;
-  }
-
-  /* Indicadores de navegação (dots) */
-  .indicadores {
-    position: absolute;
-    bottom: 15px;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 800px;
+    height: 500px;
+    border-radius: 12px;
+    background-color: transparent;
+    padding: 0 20px;
     display: flex;
-    gap: 10px;
+    justify-content: center;
+    align-items: center;
   }
 
-  .indicador {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.6); /* Indicadores com opacidade suave */
-    transition: background-color 0.3s ease;
-    cursor: pointer;
-  }
-
-  .indicador.active {
-    background-color: #f4a261; /* Cor ativa do indicador */
+  .galeria img {
+    width: auto;
+    height: 100%;
+    object-fit: contain;
+    display: block;
   }
 
   @media (max-width: 768px) {

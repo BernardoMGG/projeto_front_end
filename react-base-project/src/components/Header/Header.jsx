@@ -67,7 +67,7 @@ const Header = ({ currentPage, tecnologiasUsadas, ferramentasUsadas, cursos, per
     <>
       <Top>
         <a href="https://www.ibmec.br/">
-          <img src="/imagens/logo.png" alt="ibmec" id="logo" width="auto" height="40px" />
+          <img src="imagens/logo.png" alt="ibmec" id="logo" width="auto" height="40px" />
         </a>
         <Link to="/projetos/page/1">Projetos</Link>
         <Link to="/sobre-nos">Sobre Nós</Link>

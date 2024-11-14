@@ -8,35 +8,35 @@ const membros = [
     curso: "Análise e Desenvolvimento de Sistemas",
     unidade: "Barra",
     vinculo: "Estudante",
-    imagem: "/imagens/user.png"
+    imagem: "imagens/user.png"
   },
   {
     nome: "Bernardo Gonçalves",
     curso: "Engenharia de Software",
     unidade: "Barra",
     vinculo: "Estudante",
-    imagem: "/imagens/user.png"
+    imagem: "imagens/user.png"
   },
   {
     nome: "Bryan Amorim",
     curso: "Ciência de Dados",
     unidade: "Barra",
     vinculo: "Estudante",
-    imagem: "/imagens/user.png"
+    imagem: "imagens/user.png"
   },
   {
     nome: "Lucca Barcelos",
     curso: "Engenharia de Software",
     unidade: "Barra",
     vinculo: "Estudante",
-    imagem: "/imagens/user.png"
+    imagem: "imagens/user.png"
   },
   {
     nome: "Gustavo Salvador",
     curso: "Ciência de Dados",
     unidade: "Barra",
     vinculo: "Estudante",
-    imagem: "/imagens/user.png"
+    imagem: "imagens/user.png"
   },
 ];
 

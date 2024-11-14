@@ -1,6 +1,7 @@
-// src/components/DetalhesCard/DetalhesCard.jsx
 import React from 'react';
 import { Card } from "./Style.js";
+import { Carousel } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const DetalhesCard = ({
   nome,
@@ -11,10 +12,7 @@ const DetalhesCard = ({
   dataFim,
   tecnologias,
   ferramentas,
-  fotos,
-  currentIndex,
-  handleNext,
-  handlePrev
+  fotos
 }) => {
   return (
     <Card>
@@ -36,62 +34,72 @@ const DetalhesCard = ({
             </div>
           </div>
 
-          {/* Integrantes à esquerda */}
-          <div className="integrantes">
-            <h3>Integrantes</h3>
-            <div className="lista-integrantes">
-              {integrantes.map((integrante, index) => (
-                <div className="integrante" key={index}>
-                  <div className="avatar"></div>
-                  <span>{integrante}</span>
+          {/* Envolvendo integrantes, informações e galeria */}
+          <div className="integrantes-informacoes-galeria">
+            {/* Integrantes à esquerda */}
+            <div className="esquerda">
+              <div className="integrantes">
+                <h3>Integrantes</h3>
+                <div className="lista-integrantes">
+                  {integrantes.map((integrante, index) => (
+                    <div className="integrante" key={index}>
+                      <div className="avatar"></div>
+                      <span>{integrante}</span>
+                    </div>
+                  ))}
                 </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Informações à direita dos integrantes */}
-          <div className="informacoes">
-            {/* Dados principais lado a lado */}
-            <div className="data-inicio-conclusao">
-              <div className="info-bloco">
-                <p>Data de Início: <br /> {dataInicio}</p>
-              </div>
-              <div className="info-bloco">
-                <p>Data de Conclusão: <br /> {dataFim}</p>
               </div>
             </div>
 
-            {/* Tecnologias e Ferramentas lado a lado */}
-            <div className="tecnologias-ferramentas">
-              <div className="info-bloco">
-                <p><strong>Tecnologias Usadas:</strong></p>
-                <ul>
-                  {tecnologias.map((tech, index) => (
-                    <li key={index}>{tech}</li>
-                  ))}
-                </ul>
+            {/* Informações e Carrossel à direita */}
+            <div className="direita">
+              <div className="informacoes">
+                {/* Dados principais lado a lado */}
+                <div className="data-inicio-conclusao">
+                  <div className="info-bloco">
+                    <p><strong>Data de Início: </strong> <br />{dataInicio}</p>
+                  </div>
+                  <div className="info-bloco">
+                    <p><strong>Data de Conclusão:</strong> <br />{dataFim}</p>
+                  </div>
+                </div>
+
+                {/* Tecnologias e Ferramentas lado a lado */}
+                <div className="tecnologias-ferramentas">
+                  <div className="info-bloco">
+                    <p><strong>Tecnologias Usadas:</strong></p>
+                    <ul>
+                      {tecnologias.map((tech, index) => (
+                        <li key={index}>{tech}</li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div className="info-bloco">
+                    <p><strong>Ferramentas Usadas:</strong></p>
+                    <ul>
+                      {ferramentas.map((tools, index) => (
+                        <li key={index}>{tools}</li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
               </div>
-              <div className="info-bloco">
-                <p><strong>Ferramentas Usadas:</strong></p>
-                <ul>
-                  {ferramentas.map((tools, index) => (
-                    <li key={index}>{tools}</li>
+
+              {/* Carrossel de Fotos */}
+              <div className="galeria">
+                <Carousel>
+                  {fotos.map((foto, index) => (
+                    <Carousel.Item key={index}>
+                      <img
+                        src={foto}
+                        alt={`Foto ${index + 1}`}
+                      />
+                    </Carousel.Item>
                   ))}
-                </ul>
+                </Carousel>
               </div>
             </div>
           </div>
-          {/* Carrossel de Fotos */}
-          <div className="galeria">
-              <h3>Outras Fotos</h3>
-              <div className="carrossel" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
-                {fotos.map((foto, index) => (
-                  <img src={foto} alt={`Foto ${index + 1}`} key={index} />
-                ))}
-              </div>
-              <button className="prev" onClick={handlePrev}>{"<"}</button>
-              <button className="next" onClick={handleNext}>{">"}</button>
-            </div>
         </div>
       </div>
     </Card>

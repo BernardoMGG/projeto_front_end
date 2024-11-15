@@ -124,3 +124,7 @@ O propósito do sistema é criar um meio de dar visibilidade aos projetos dos al
 
 Link para o Figma: https://www.figma.com/design/F65MDpCZktulsr9NlB0S7L/Portif%C3%B3lios-e-Projetos-ibmec?node-id=0-1&node-type=canvas&t=OKowjGWjUxjPtWqR-0
 
+# CANVA DA APRESENTAÇÃO:
+
+Link para o canva: https://www.canva.com/design/DAGRn4R6vFE/oyBG_y9jbTR9W0tt9X101w/edit?utm_content=DAGRn4R6vFE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+

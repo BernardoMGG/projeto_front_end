@@ -24,7 +24,6 @@ const Card = styled.article`
     font-size: 1rem;
     font-weight: bold;
     color: #161C2D;
-    margin-bottom: 0.3em;
     margin-right: auto;
     text-align: center;
   }
@@ -32,7 +31,7 @@ const Card = styled.article`
   .image-container {
     width: calc(100% - 2em);
     height: 200px; /* Altura fixa para a div */
-    margin: 1em 0;
+    margin: 0.3em 0 1em 0em;
     position: relative;
     overflow: hidden;
   }
@@ -56,18 +55,18 @@ const Card = styled.article`
   .detalhes {
     background-color: #161C2D;
     color: var(--secundaria);
-    padding: 0.5em;
+    padding: .5em;
     display: flex;
     justify-content: center;
     flex-direction: column; /* Permite que o texto ocupe várias linhas */
     border-bottom-left-radius: 5px;
-    max-height: 7rem; /* Limite máximo de altura */
-    overflow: hidden; /* Oculta conteúdo que ultrapassa o espaço */
+    max-height: 7rem; //só pra nao quebrar, esse foi na marra
   }
 
   .detalhes p {
+    margin: 0;
     font-size: 1rem;
-    line-height: 1.4;
+    line-height: 1.2;
     text-align: left;
     overflow: hidden;
     display: -webkit-box;
@@ -89,7 +88,8 @@ const Card = styled.article`
   .direita span {
     display: block;
     font-size: 0.8rem;
-    margin-bottom: 0.4rem;
+    margin-bottom: 0.5rem;
+    line-height: 1;
   }
 
   .integrantes-lista{
@@ -118,7 +118,7 @@ const Card = styled.article`
   }
 
   .vermais {
-    margin-top: auto;
+    margin-top: 0.5rem;
     font-size: 0.7rem;
     color: white;
     padding: 0.3rem 0.5rem;

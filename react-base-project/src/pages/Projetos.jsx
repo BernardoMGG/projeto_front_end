@@ -48,7 +48,17 @@ const Projetos = () => {
     const unidade = queryParams.get("unidade") || "";
 
     return (
-      (!searchQuery || projeto.Nome.toLowerCase().includes(searchQuery.toLowerCase())) &&
+      (!searchQuery || (projeto.Nome.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        projeto.detalhes.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        projeto.Curso.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        projeto.unidade.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        projeto.período.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        projeto.datainicio.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        projeto.datafim.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        projeto.integrantes.some(integrante => integrante.toLowerCase().includes(searchQuery.toLowerCase())) ||
+        projeto.ferramentas.some(ferramenta => ferramenta.toLowerCase().includes(searchQuery.toLowerCase())) ||
+        projeto.tecnologias.some(tecnolgia => tecnolgia.toLowerCase().includes(searchQuery.toLowerCase())) )
+      )&&
       (!tecnologia || projeto.tecnologias.includes(tecnologia)) &&
       (!ferramenta || projeto.ferramentas.includes(ferramenta)) &&
       (!curso || projeto.Curso === curso) &&

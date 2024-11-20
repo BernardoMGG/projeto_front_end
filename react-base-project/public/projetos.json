@@ -9,7 +9,7 @@
     "unidade": "Barra",
     "período": "nono",
     "datainicio": "2023-01-10",
-    "datafim": "2023-06-15",
+    "datafim": "2024-06-15",
     "Fotodecapa": "imagens/image.png",
     "fotos": ["imagens/old-computer-4.jpg", "imagens/old-computer-4.jpg", "imagens/old-computer-4.jpg", "imagens/old-computer-4.jpg"]
   },
@@ -22,7 +22,7 @@
     "Curso": "Ciência de Dados",
     "unidade": "Centro",
     "período": "quarto",
-    "datainicio": "2023-02-01",
+    "datainicio": "2000-02-01",
     "datafim": "2023-05-20",
     "Fotodecapa": "imagens/old-computer-2.jpg",
     "fotos": ["imagens/old-computer-4.jpg", "imagens/old-computer-4.jpg", "imagens/old-computer-4.jpg", "imagens/old-computer-4.jpg"]

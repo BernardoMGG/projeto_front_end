@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const Card = styled.article`
-  margin: 0em;
+  margin: 2rem 5rem;
   padding: 2em;
   background-color: #ffffff;
   border-radius: 16px;
@@ -14,7 +14,7 @@ const Card = styled.article`
   }
 
   .header h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #2e3b4e;
     font-weight: bold;
     margin-bottom: 1.2em;
@@ -22,26 +22,27 @@ const Card = styled.article`
 
   .conteudo {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-between;
   }
 
   .descricao-foto {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    align-items: center;
+    gap: 1em;
     margin-bottom: 2em;
   }
 
   .descricao {
     flex: 1;
-    padding-right: 1em;
-    max-height: 300px;
+    max-height: 500px;
     overflow-y: auto;
+    padding-right: 1em;
   }
 
   .descricao p {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     color: #444;
     line-height: 1.7;
     text-align: justify;
@@ -49,13 +50,13 @@ const Card = styled.article`
 
   .foto-principal {
     flex: 1;
-    margin-left: 1em;
+    max-width: 40%;
   }
 
   .foto-principal img {
     width: 100%;
-    height: 100%;
-    max-height: 300px;
+    height: auto;
+    max-height: 500px;
     object-fit: cover;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
   }
@@ -157,23 +158,54 @@ const Card = styled.article`
   }
 
   .galeria {
-    overflow: hidden;
-    width: 100%;
-    width: 800px;
-    height: 500px;
-    border-radius: 12px;
-    background-color: transparent;
-    padding: 0 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
   }
 
-  .galeria img {
+  .carrossel-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+    justify-content: center;
+  }
+
+  .carrossel-slide img {
     width: auto;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
     display: block;
+  }
+
+  .carrossel-control {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 2rem;
+    border: none;
+    padding: 3rem 1rem;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+  }
+
+  .carrossel-control.prev {
+    margin-right: 45rem;
+  }
+
+  .carrossel-control.next {
+    margin-left: 45rem;
+  }
+
+  .carrossel-control:hover {
+    background-color: rgba(0, 0, 0, 0.7);
   }
 
   @media (max-width: 768px) {

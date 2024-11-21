@@ -1,7 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Card } from "./Style.js";
-import { Carousel } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 const DetalhesCard = ({
   nome,
@@ -14,6 +12,16 @@ const DetalhesCard = ({
   ferramentas,
   fotos
 }) => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const nextSlide = () => {
+    setCurrentSlide((prevIndex) => (prevIndex + 1) % fotos.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentSlide((prevIndex) => (prevIndex - 1 + fotos.length) % fotos.length);
+  };
+
   return (
     <Card>
       <div className="projeto">
@@ -85,18 +93,15 @@ const DetalhesCard = ({
                 </div>
               </div>
 
-              {/* Carrossel de Fotos */}
+              {/* Carrossel de Fotos Customizado */}
               <div className="galeria">
-                <Carousel>
-                  {fotos.map((foto, index) => (
-                    <Carousel.Item key={index}>
-                      <img
-                        src={foto}
-                        alt={`Foto ${index + 1}`}
-                      />
-                    </Carousel.Item>
-                  ))}
-                </Carousel>
+                <div className="carrossel-container">
+                  <button className="carrossel-control prev" onClick={prevSlide}>❮</button>
+                  <div className="carrossel-slide">
+                    <img src={fotos[currentSlide]} alt={`Foto ${currentSlide + 1}`} />
+                  </div>
+                  <button className="carrossel-control next" onClick={nextSlide}>❯</button>
+                </div>
               </div>
             </div>
           </div>

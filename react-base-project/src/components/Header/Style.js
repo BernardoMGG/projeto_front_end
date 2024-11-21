@@ -144,7 +144,7 @@ const BottomBar = styled.div`
     background-color: #d99a00;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1000px) {
     flex-direction: column; /* Altera a direção do flex */
     align-items: stretch; /* Alinha todos os itens à largura total */
     height: auto; /* Permite que a altura se ajuste ao conteúdo */
@@ -180,7 +180,7 @@ const BottomBar = styled.div`
     }
   }
 
-  @media (max-width: 960px) {
+  @media (max-width: 1200px) {
     flex-direction: column; /* Altera a direção do flex */
     align-items: stretch; /* Alinha todos os itens à largura total */
     height: auto; /* Permite que a altura se ajuste ao conteúdo */
